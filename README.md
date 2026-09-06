@@ -426,5 +426,13 @@ Leviathan Launcher is currently:
 
 A modern third-party desktop launcher for legitimate Minecraft: Java Edition players.
 
+
+## License
+
+Leviathan Launcher is proprietary software.
+
+Copyright © 2026 Danni. All Rights Reserved.
+
+See the [LICENSE](LICENSE) file for the complete license terms.
 **Current access:** Developer only  
 **Current status:** Private Development
