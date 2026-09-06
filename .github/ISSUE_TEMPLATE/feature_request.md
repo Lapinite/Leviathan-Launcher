@@ -1,63 +1,50 @@
 ---
-name: Bug report
-about: Report a reproducible problem with Leviathan Launcher
-title: "[Bug] "
-labels: bug
+name: Feature request
+about: Suggest an improvement or new feature for Leviathan Launcher
+title: "[Feature] "
+labels: enhancement
 assignees: ''
 ---
 
-# Bug Report
+# Feature Request
 
-> Leviathan Launcher is currently in private development. Public issue reporting may be enabled later.
+> Leviathan Launcher is currently in private development. Public feature requests may be enabled later.
 
 ## Summary
 
-Describe the problem clearly and briefly.
+Describe the feature or improvement you would like to see.
 
-## Steps to Reproduce
+## Problem / Motivation
 
-1.
-2.
-3.
-4.
+What problem would this solve?
 
-## Expected Behavior
+## Proposed Solution
 
-What did you expect to happen?
+Describe how you think the feature should work.
 
-## Actual Behavior
+## Alternatives Considered
 
-What actually happened?
+Are there other ways the same goal could be achieved?
 
-## Environment
+## User Experience
 
-- Leviathan Launcher version/commit:
-- Operating system:
-- Java version:
-- Minecraft version:
-- Mod loader, if applicable:
-- Relevant launcher profile:
+How should the feature appear or behave in the launcher?
 
-## Logs / Error Messages
+## Technical Notes
 
-Paste only the relevant error output.
-
-**Do not post passwords, access tokens, refresh tokens, session cookies, private keys, client secrets, or other credentials.**
-
-```text
-Paste relevant logs here
-```
-
-## Screenshots
-
-Add screenshots if they help explain the issue.
+Optional implementation ideas, compatibility concerns, API requirements, or other technical details.
 
 ## Additional Context
 
-Add any other useful information here.
+Add mockups, screenshots, references, or other useful information here.
 
-## Security Notice
+## Project Rules
 
-If the issue may expose credentials, authentication tokens, account access, remote-code execution, arbitrary file access, or another security-sensitive problem, **do not post exploit details publicly**.
+Feature requests must not propose:
 
-Follow the instructions in [SECURITY.md](../../SECURITY.md) instead.
+- Cracked authentication
+- Ownership or entitlement bypasses
+- License circumvention
+- Credential collection
+- Account impersonation
+- Circumvention of Microsoft, Xbox, Mojang, or Minecraft security systems
