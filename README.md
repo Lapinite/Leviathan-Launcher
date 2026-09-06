@@ -386,16 +386,6 @@ Contribution guidelines may be added in the future if the project becomes open t
 
 ---
 
-## License
-
-No open-source license has currently been assigned to Leviathan Launcher.
-
-Unless otherwise stated, no permission is granted to redistribute, modify, repackage, sell, sublicense, or commercially distribute project source code, binaries, branding, or assets.
-
-A formal license may be added in the future.
-
----
-
 ## Support
 
 Public support is not currently available because Leviathan Launcher has not yet been released.
