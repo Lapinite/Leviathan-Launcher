@@ -1,0 +1,22 @@
+# Leviathan Launcher Code Owners
+#
+# Danni / Lapinite is currently the sole developer and maintainer.
+# These rules automatically request review from @Lapinite when
+# pull requests modify matching files.
+
+* @Lapinite
+
+# Project documentation
+/*.md @Lapinite
+/docs/ @Lapinite
+
+# Repository configuration
+/.github/ @Lapinite
+
+# Build configuration and source, when added
+/build.gradle @Lapinite
+/build.gradle.kts @Lapinite
+/settings.gradle @Lapinite
+/settings.gradle.kts @Lapinite
+/gradle/ @Lapinite
+/src/ @Lapinite
