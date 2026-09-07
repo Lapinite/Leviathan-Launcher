@@ -1,134 +1,58 @@
 # Contributing to Leviathan Launcher
 
-**Project status:** Private Development
+**Status:** Private development / limited external contribution  
+**Last updated:** 8 September 2026
 
-Thank you for your interest in Leviathan Launcher.
+Thank you for your interest in Leviathan Launcher. The project is proprietary unless a file explicitly states otherwise.
 
-Leviathan Launcher is currently a privately developed proprietary project maintained by **Danni**. External contributions are not currently accepted by default.
+## Before contributing
 
----
+Read:
 
-## Current Contribution Policy
+- `LICENSE`;
+- `CODE_OF_CONDUCT.md`;
+- `SECURITY.md`;
+- `MINECRAFT_COMPLIANCE.md` for Minecraft-related changes;
+- `AUTHENTICATION_AND_APPID_POLICY.md` for identity/authentication changes.
 
-At this stage:
+## No implied source license
 
-- Unsolicited code contributions may be declined.
-- Pull requests should only be opened when explicitly invited or approved by the developer.
-- Feature suggestions and bug reports may be considered when public issue tracking is enabled.
-- Security vulnerabilities should follow [SECURITY.md](SECURITY.md), not public issue threads.
-- Public visibility of the repository does not make Leviathan Launcher open-source software.
+The ability to view, clone, fork, or open a pull request does not grant a general right to redistribute or create derivative Leviathan products. The repository license continues to apply.
 
-See [LICENSE](LICENSE) for the complete licensing terms.
+## Rights in your contribution
 
----
+By submitting a contribution for inclusion in Leviathan, you represent that you have the legal right to submit it and that it does not knowingly include material you are not permitted to provide.
 
-## Before Contributing
+To the extent you own rights in the submitted contribution, you grant the Leviathan project owner a perpetual, worldwide, non-exclusive, irrevocable, royalty-free license to use, reproduce, modify, distribute, sublicense, display, perform, and incorporate the contribution into Leviathan and related project materials, including proprietary distributions.
 
-If you have been invited to contribute, please:
+Do not submit third-party code or assets whose license is incompatible with that use.
 
-1. Discuss the proposed change with the developer first.
-2. Keep the change focused and limited in scope.
-3. Follow the existing project structure and coding conventions.
-4. Do not commit secrets, tokens, passwords, private keys, or personal data.
-5. Test the change before submitting it.
-6. Update documentation where necessary.
-7. Include third-party license information for any newly introduced dependency.
+## Security-sensitive changes
 
----
+Authentication, account recovery, economy, marketplace, payments, update signing, permissions, cryptography, and secret-handling changes require heightened review.
 
-## Pull Requests
+Do not put real credentials, tokens, account recovery material, personal data, production endpoints containing secrets, or private infrastructure details in issues or pull requests.
 
-Approved pull requests should include:
+## Minecraft-related changes
 
-- A clear title
-- A short explanation of the change
-- Why the change is needed
-- Testing performed
-- Any known limitations
-- Any dependency or licensing changes
+Changes must not intentionally add cracked authentication, entitlement bypasses, unauthorized Minecraft redistribution, or features that violate the project's compliance policy.
 
-Large unrelated changes should not be bundled into one pull request.
+Paid Minecraft-integrated features must remain subject to the release gates described in `MINECRAFT_COMPLIANCE.md`.
 
----
+## Pull requests
 
-## Security-Sensitive Changes
+A useful pull request should:
 
-Changes involving any of the following require extra care:
+- explain the problem and the change;
+- keep scope focused;
+- include tests where practical;
+- avoid unrelated formatting churn;
+- update relevant documentation;
+- disclose new dependencies and their licenses;
+- avoid sensitive information.
 
-- Microsoft authentication
-- Xbox Live authentication
-- XSTS authentication
-- Minecraft Services
-- Token handling
-- Session storage
-- Launcher updates
-- Download verification
-- File-system operations
-- External process launching
-- Remote content
-- Secrets or credentials
+Submission does not guarantee acceptance.
 
-Never include real access tokens, refresh tokens, session cookies, client secrets, private keys, or passwords in commits, issues, examples, or screenshots.
+## Vulnerabilities
 
----
-
-## Dependencies
-
-Any newly added third-party dependency should include:
-
-- Project name
-- Version
-- License
-- Project URL
-- Required attribution or notices
-
-Update [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) when appropriate.
-
----
-
-## Ownership and Licensing of Contributions
-
-Unless a separate written agreement states otherwise, accepting a contribution does not change the proprietary status of Leviathan Launcher.
-
-Before external contributions are accepted publicly, the project may introduce a formal contributor license agreement or contribution terms.
-
----
-
-## Coding Standards
-
-Project-specific coding standards may evolve during development.
-
-General expectations:
-
-- Prefer clear, maintainable code
-- Avoid unnecessary complexity
-- Handle errors explicitly
-- Avoid leaking sensitive information into logs
-- Keep authentication logic isolated where practical
-- Document non-obvious behavior
-- Preserve compatibility with supported Java versions
-
----
-
-## Documentation
-
-Documentation changes should remain consistent with:
-
-- [README.md](README.md)
-- [PRIVACY.md](PRIVACY.md)
-- [SECURITY.md](SECURITY.md)
-- [TERMS.md](TERMS.md)
-- [LICENSE](LICENSE)
-
----
-
-## Contact
-
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
-
----
-
-**Leviathan Launcher**  
-Copyright © 2026 Danni. All Rights Reserved.
+Do not use a public pull request to disclose an exploitable security issue before coordinated handling. Follow `SECURITY.md`.
