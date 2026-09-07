@@ -10,7 +10,7 @@ There is currently no official public installer, download, beta build, or releas
 
 ## Current Access
 
-Development builds are currently available only to the developer, **Danni**.
+Development builds are currently restricted to authorized maintainers of the **Leviathan project portfolio**.
 
 The project repository is public for documentation, transparency, and review purposes, but the launcher itself is not currently distributed publicly.
 

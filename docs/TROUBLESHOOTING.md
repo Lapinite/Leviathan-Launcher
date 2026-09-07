@@ -92,7 +92,7 @@ If the error states that the Microsoft application is not authorized or approved
 
 ## Minecraft AppID Approval Pending
 
-Leviathan Launcher's AppID has been submitted to Mojang Studios for review.
+Leviathan Launcher's AppID review submission is currently pending.
 
 While approval is pending:
 
@@ -101,7 +101,7 @@ While approval is pending:
 - XSTS authentication may succeed.
 - Minecraft Services may still reject the application.
 
-Do not repeatedly resubmit the same AppID unless Mojang requests it.
+After submission, do not repeatedly resubmit the same AppID unless Microsoft/Minecraft requests it.
 
 ---
 
@@ -384,4 +384,4 @@ Follow [SECURITY.md](../SECURITY.md).
 
 **Leviathan Launcher**  
 Troubleshooting Guide  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.
