@@ -23,7 +23,7 @@ assets/
 └── README.md
 ```
 
-The image filenames above are recommended placeholders. Only add files that actually exist.
+Only reference asset files that actually exist in the repository.
 
 ---
 
@@ -179,7 +179,7 @@ The `assets/` folder should primarily contain final exported assets intended for
 
 Unless otherwise stated, original Leviathan Launcher artwork, icons, logos, UI assets, promotional images, and branding are:
 
-**Copyright © 2026 Danni. All Rights Reserved.**
+**Copyright © 2026 Leviathan project owner. All Rights Reserved.**
 
 Third-party logos, trademarks, screenshots, or other materials remain the property of their respective owners.
 
@@ -231,4 +231,4 @@ Some branding and screenshots may represent concepts or development-stage design
 
 **Leviathan Launcher**  
 Assets Documentation  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.
