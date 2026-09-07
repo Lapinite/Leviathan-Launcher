@@ -391,4 +391,4 @@ This architecture document should be updated as major systems change.
 
 **Leviathan Launcher**  
 Architecture Documentation  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.

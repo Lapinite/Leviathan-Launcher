@@ -1,7 +1,7 @@
 # Leviathan Launcher Development Guide
 
 **Project status:** Private Development  
-**Primary developer:** Danni
+**Project:** Leviathan project portfolio
 
 This document describes the current development setup and intended development workflow for Leviathan Launcher.
 
@@ -427,11 +427,7 @@ Code ownership is defined in:
 .github/CODEOWNERS
 ```
 
-The current owner is:
-
-```text
-@Lapinite
-```
+CODEOWNERS uses the repository maintainer account required by GitHub for automatic review requests.
 
 ---
 
@@ -490,12 +486,11 @@ See:
 
 ## Contact
 
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
+**Project:** Leviathan project portfolio  
 **Repository:** https://github.com/Lapinite/Leviathan-Launcher
 
 ---
 
 **Leviathan Launcher**  
 Development Guide  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.
