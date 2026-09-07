@@ -1,48 +1,43 @@
 # Leviathan Launcher Authentication Architecture
 
-**Status:** Private Development  
-**Audience:** Project documentation and technical review
+**Status:** Private development  
+**Last updated:** 8 September 2026
 
-Leviathan Launcher is designed to authenticate legitimate Minecraft: Java Edition users through Microsoft's official authentication infrastructure.
+Leviathan Launcher is designed to authenticate legitimate Minecraft: Java Edition users through Microsoft's official identity infrastructure and the Xbox/XSTS/Minecraft Services chain where required.
 
-This document describes the intended high-level authentication flow without exposing secrets, credentials, or sensitive implementation details.
-
----
+This document intentionally omits private administrative identifiers and confidential credentials.
 
 ## Goals
 
 The authentication system is designed to:
 
-- Authenticate users through Microsoft
-- Avoid handling Microsoft account passwords directly
-- Authenticate with Xbox Live
-- Authenticate with Xbox Security Token Service (XSTS)
-- Authenticate with Minecraft Services
-- Verify legitimate Minecraft: Java Edition ownership or entitlement
-- Retrieve the authenticated Minecraft profile
-- Obtain the credentials required to launch Minecraft legitimately
+- authenticate through Microsoft without collecting a Microsoft password in a Leviathan form;
+- use a desktop public-client flow;
+- authenticate with Xbox Live and XSTS as required;
+- authenticate with Minecraft Services;
+- verify legitimate Minecraft ownership or entitlement;
+- retrieve the authenticated Minecraft profile;
+- obtain credentials required for legitimate game launch.
 
-The system is **not** intended to bypass authentication, ownership checks, licensing, entitlements, or security controls.
+It is not designed to bypass authentication, ownership, licensing, entitlements, or safety controls.
 
----
+## Current Entra configuration baseline
 
-## Microsoft Entra Application
+The current intended app-registration baseline is:
 
-Leviathan Launcher uses its own Microsoft Entra application registration.
+- public desktop client;
+- personal Microsoft accounts;
+- system browser;
+- Authorization Code with PKCE;
+- localhost loopback redirect;
+- public client flows enabled;
+- legacy Live SDK support disabled;
+- no confidential client secret;
+- no Web redirect URI;
+- no SPA redirect URI;
+- no configured Microsoft Graph permissions required by the Minecraft authentication flow.
 
-The application is configured as a **public desktop client**.
-
-Because Leviathan Launcher is a desktop application, no confidential client secret is embedded in the launcher.
-
-The Microsoft Application (Client) ID is an identifier and is not treated as a secret.
-
-Private credentials such as client secrets, private keys, user access tokens, refresh tokens, or session data must not be committed to the repository.
-
----
-
-## Authentication Flow
-
-The intended flow is:
+## Authentication flow
 
 ```text
 Leviathan Launcher
@@ -51,228 +46,104 @@ Leviathan Launcher
 Microsoft Authentication
         |
         v
-Microsoft Access Token
+Microsoft Token for Required Xbox/Minecraft Flow
         |
         v
 Xbox Live Authentication
         |
         v
-Xbox User Token
-        |
-        v
-XSTS Authentication
-        |
-        v
-XSTS Token
+XSTS Authorization
         |
         v
 Minecraft Services Authentication
         |
-        v
-Minecraft Access Token
-        |
-        +----------------------+
-        |                      |
-        v                      v
-Ownership / Entitlement   Minecraft Profile
-Verification              Retrieval
-        |                      |
-        +----------+-----------+
-                   |
-                   v
-             Game Launch
+        +-----------------------+
+        |                       |
+        v                       v
+Entitlement / Ownership     Minecraft Profile
+Verification                Retrieval
+        |                       |
+        +-----------+-----------+
+                    |
+                    v
+             Legitimate Launch
 ```
 
----
+## Microsoft authentication
 
-## 1. Microsoft Authentication
+The launcher opens Microsoft-controlled authentication in the system browser. A localhost loopback callback returns the authorization response to the desktop application.
 
-The user signs in through Microsoft's authentication infrastructure.
+PKCE protects the authorization-code exchange for the public client. State validation should be used to bind the callback to the initiating login attempt.
 
-Leviathan Launcher should not display a custom password form for Microsoft credentials.
+The launcher must not embed a confidential client secret.
 
-The launcher receives authentication results from Microsoft rather than receiving the user's password.
+## Xbox Live and XSTS
 
-Depending on the final implementation, authentication may use a public-client-compatible Microsoft OAuth flow suitable for desktop applications.
+After Microsoft authentication, the launcher performs the provider-required Xbox Live and XSTS steps needed for Minecraft authentication.
 
----
+Provider errors should be surfaced without leaking tokens or authorization headers.
 
-## 2. Xbox Live Authentication
+## Minecraft Services
 
-After successful Microsoft authentication, the launcher uses the Microsoft-issued token to authenticate with Xbox Live.
+The XSTS result is used to authenticate with Minecraft Services. Production use remains subject to applicable AppID approval requirements.
 
-The resulting Xbox token is used only as required for the next stage of the authentication process.
+The project must not claim approval until it has actually been granted.
 
----
+## Entitlement verification
 
-## 3. XSTS Authentication
+Successful Microsoft sign-in alone is not proof that the user owns Minecraft: Java Edition.
 
-The Xbox token is exchanged with Xbox Security Token Service (XSTS).
+Leviathan must verify the appropriate entitlement/ownership state before a normal authenticated launch.
 
-XSTS provides the authorization information required to continue to Minecraft Services.
+## Minecraft profile
 
-XSTS failures should be surfaced to the user without exposing sensitive tokens in logs or UI messages.
+After successful authentication, the launcher may retrieve the Minecraft profile information needed for launcher functionality, such as a stable Minecraft profile identifier and username.
 
----
+Only necessary information should be processed.
 
-## 4. Minecraft Services Authentication
+## Microsoft Graph
 
-The XSTS authorization result is used to authenticate with Minecraft Services.
+Leviathan's current Minecraft authentication flow does not require configured Microsoft Graph permissions.
 
-Minecraft Services may reject an application whose AppID has not been approved for the required APIs.
+The launcher should not request unrelated Graph access to mail, contacts, calendars, files, Teams, directory data, or authentication-method data.
 
-Leviathan Launcher's AppID has been submitted to Mojang Studios for review.
+## Token handling
 
----
+Authentication tokens are sensitive. The launcher should:
 
-## 5. Ownership / Entitlement Verification
+- keep them out of source control;
+- redact them from logs and crash reports;
+- avoid displaying raw tokens;
+- clear local state on sign-out where practical;
+- use secure operating-system credential storage for durable sensitive tokens where practical;
+- prefer re-authentication over weak persistent obfuscation.
 
-After Minecraft authentication succeeds, the launcher should verify that the authenticated account legitimately owns or otherwise has valid access to Minecraft: Java Edition.
+## Safe logging
 
-Leviathan Launcher must not treat successful Microsoft authentication alone as proof of game ownership.
+Useful diagnostics can include:
 
-Failure of ownership or entitlement verification should prevent a normal authenticated game launch.
+- authentication stage;
+- timestamp;
+- provider error code;
+- HTTP status code;
+- correlation/trace identifier;
+- non-sensitive configuration state.
 
----
+Never log passwords, full tokens, cookies, secrets, private keys, or authorization headers.
 
-## 6. Minecraft Profile Retrieval
+## Separate Leviathan Account
 
-After authentication, the launcher may retrieve the authenticated Minecraft profile, including information required for launcher functionality such as:
+Optional Leviathan Account linking is separate from Microsoft/Minecraft authentication. It may provide platform features but cannot authorize game launch without valid Microsoft/Minecraft authentication and entitlement.
 
-- Minecraft UUID
-- Minecraft username
-- Profile information returned by Minecraft Services
+## Prohibited behavior
 
-Only information required for launcher functionality should be processed.
+The launcher must not intentionally implement:
 
----
-
-## 7. Token Handling
-
-Authentication tokens are sensitive.
-
-Leviathan Launcher should:
-
-- Avoid printing full tokens to logs
-- Avoid exposing tokens in crash reports
-- Avoid storing tokens in source-controlled files
-- Store local authentication state only where necessary
-- Restrict token use to the services and purposes for which it was issued
-- Clear or invalidate local authentication state when the user signs out
-- Prefer secure operating-system storage where practical before public release
-
-Files containing token or session data should remain excluded through `.gitignore`.
-
----
-
-## 8. Error Handling
-
-Authentication errors should be translated into useful user-facing messages where possible.
-
-Examples include:
-
-- Microsoft sign-in failed
-- Public-client configuration error
-- Xbox Live authentication failed
-- XSTS authentication failed
-- Minecraft Services rejected the AppID
-- Minecraft ownership could not be verified
-- Minecraft profile could not be retrieved
-- Session expired
-
-Raw access tokens or other credentials must never be included in user-facing error messages.
-
----
-
-## 9. Logging
-
-Authentication logging should be useful for development without exposing secrets.
-
-Safe examples:
-
-- Authentication stage name
-- HTTP status code
-- Microsoft / Xbox / Minecraft error code
-- Correlation or trace identifiers
-- Timestamp
-- Non-sensitive configuration state
-
-Unsafe examples:
-
-- Access tokens
-- Refresh tokens
-- Session cookies
-- Client secrets
-- Private keys
-- Full authorization headers
-
----
-
-## 10. Sign-Out
-
-Signing out should remove or invalidate locally stored Leviathan authentication state where practical.
-
-If Microsoft or other providers maintain independent browser sessions, those sessions may remain governed by the relevant provider.
-
----
-
-## 11. Security Boundaries
-
-Leviathan Launcher does not control:
-
-- Microsoft identity infrastructure
-- Xbox Live
-- XSTS
-- Minecraft Services
-- Mojang Studios systems
-
-Those services are external trust boundaries and remain subject to their own terms, policies, availability, and security controls.
-
----
-
-## 12. AppID Approval Status
-
-Current state:
-
-- [x] Microsoft Entra application registered
-- [x] Public desktop client configuration enabled
-- [x] Microsoft authentication integrated
-- [x] Xbox Live authentication integrated
-- [x] XSTS authentication integrated
-- [x] Minecraft Services integration implemented
-- [x] Mojang AppID approval request submitted
-- [ ] Mojang AppID approval received
-- [ ] Production Minecraft authentication fully verified after approval
-
----
-
-## 13. Prohibited Authentication Behavior
-
-Leviathan Launcher must not intentionally implement:
-
-- Cracked authentication
-- Offline impersonation presented as legitimate Microsoft authentication
-- Ownership bypasses
-- Entitlement bypasses
-- License circumvention
-- Credential harvesting
-- Account theft
-- Token theft
-- Security-check bypasses
-- Unauthorized reuse of another application's AppID
-
----
-
-## Related Documents
-
-- [README](../README.md)
-- [Privacy Policy](../PRIVACY.md)
-- [Security Policy](../SECURITY.md)
-- [License](../LICENSE)
-- [Third-Party Notices](../THIRD_PARTY_NOTICES.md)
-
----
-
-**Leviathan Launcher**  
-Authentication Architecture  
-Copyright © 2026 Danni. All Rights Reserved.
+- cracked authentication;
+- credential harvesting;
+- token theft;
+- ownership bypasses;
+- entitlement bypasses;
+- license circumvention;
+- hidden production authentication bypasses;
+- use of another application's registration or approval.
