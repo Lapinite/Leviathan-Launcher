@@ -33,7 +33,7 @@ A legitimate Microsoft account with access to Minecraft: Java Edition is require
 
 Leviathan Launcher is currently a **private development project**.
 
-At this stage, development builds are accessible only to the developer, **Danni**, for:
+At this stage, development builds are restricted to the **Leviathan project portfolio** for:
 
 - Development
 - Authentication integration
@@ -112,7 +112,7 @@ Leviathan Launcher is configured as a **public desktop client**, meaning no conf
 
 Leviathan Launcher uses its own Microsoft Entra Application ID.
 
-The AppID has been submitted to Mojang Studios for review and approval for use with Minecraft Services.
+The AppID review submission is currently pending. Production Minecraft Services access remains subject to the applicable Microsoft/Minecraft AppID review and approval requirements.
 
 The application requires Minecraft Services access for legitimate launcher functionality including:
 
@@ -198,7 +198,7 @@ Leviathan Launcher is currently under **private development**.
 
 There is currently no official public download.
 
-Development and testing builds are accessible only to the developer, Danni.
+Development and testing builds are restricted to the Leviathan project portfolio.
 
 Public installation packages may be published in the future when the launcher is ready for testing or release.
 
@@ -240,7 +240,7 @@ The project is actively evolving and components may change significantly during 
 
 **Current status:** Private Development
 
-Leviathan Launcher is currently being developed and tested privately by the developer, **Danni**.
+Leviathan Launcher is currently being developed and tested privately as part of the **Leviathan project portfolio**.
 
 The launcher is not yet publicly distributed.
 
@@ -261,7 +261,7 @@ Current development progress:
 - [x] XSTS authentication integration
 - [x] Minecraft Services integration
 - [x] Private developer authentication testing
-- [x] Minecraft AppID approval request submitted
+- [ ] Submit Minecraft AppID review request
 - [ ] Minecraft AppID approved
 - [ ] Minecraft Services production authentication fully enabled
 - [ ] Complete Minecraft installation management
@@ -299,17 +299,11 @@ The project aims to comply with applicable Microsoft, Xbox, Mojang, and Minecraf
 
 ---
 
-## Developer
+## Project Maintenance
 
-Leviathan Launcher is currently developed and maintained by:
+Leviathan Launcher is currently developed and maintained as part of the **Leviathan project portfolio**.
 
-**Danni**
-
-GitHub:
-
-https://github.com/Lapinite
-
-During the current private-development phase, Danni is the only person with access to development builds of the launcher.
+During the current private-development phase, access to development builds is restricted to authorized project maintainers.
 
 ---
 
@@ -319,9 +313,6 @@ Official repository:
 
 https://github.com/Lapinite/Leviathan-Launcher
 
-GitHub profile:
-
-https://github.com/Lapinite
 
 This repository contains project information, documentation, development resources, and other materials related to Leviathan Launcher.
 
@@ -439,11 +430,7 @@ Good-faith security reports are appreciated.
 
 For project-related questions regarding Leviathan Launcher, authentication integration, Minecraft AppID approval, or project development:
 
-**Developer:** Danni
-
-GitHub:
-
-https://github.com/Lapinite
+**Project:** Leviathan project portfolio
 
 Repository:
 
@@ -457,7 +444,7 @@ Additional contact methods may be added before public release.
 
 Leviathan Launcher is **proprietary software**.
 
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.
 
 Public visibility of this repository does not make Leviathan Launcher open-source software and does not grant permission to redistribute, modify, repackage, sell, sublicense, or commercially exploit the project.
 
@@ -473,8 +460,8 @@ See the [LICENSE](LICENSE) file for the complete license terms.
 
 Leviathan Launcher is currently:
 
-- Privately developed by Danni
-- Accessible only to the developer
+- Privately developed as part of the Leviathan project portfolio
+- Development builds restricted to authorized project maintainers
 - Not publicly distributed
 - Using its own Microsoft Entra application registration
 - Using Microsoft account authentication
