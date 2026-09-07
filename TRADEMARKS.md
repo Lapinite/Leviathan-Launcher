@@ -1,78 +1,29 @@
-# Leviathan Launcher Trademark & Branding Notice
+# Leviathan Launcher — Trademark and Brand Policy
 
-Leviathan Launcher is an independent third-party project.
+**Last updated:** 8 September 2026
 
----
+This policy covers use of Leviathan project names, logos, icons, artwork, and visual identity. It does not claim registration of any mark that has not actually been registered.
 
-## Leviathan Branding
+## Leviathan branding
 
-Original project identifiers associated with Leviathan Launcher may include:
+Original Leviathan branding may include the Leviathan name, Leviathan Launcher name, project logos, dragon emblem, application icons, interface branding, and promotional artwork.
 
-- Leviathan Launcher
-- Leviathan name and launcher branding
-- Leviathan dragon artwork
-- Leviathan launcher icons
-- Leviathan visual identity
-- Leviathan UI branding
-- Leviathan promotional artwork
-- Other original project-specific branding
+Unless permission or applicable law allows otherwise, do not use Leviathan branding in a way that is likely to make users believe an unofficial project, build, service, social account, or product is official, sponsored, or endorsed by Leviathan.
 
-Unless otherwise stated, these original materials are reserved by the Leviathan Launcher developer.
+## Generally acceptable factual use
 
-Public repository visibility does not grant general permission to reuse Leviathan branding.
+Subject to applicable law, factual references such as reviews, news coverage, compatibility documentation, security research, commentary, and statements that a product interoperates with Leviathan may use the project name where the reference is accurate and not misleading.
 
----
+## Unofficial builds and forks
 
-## Prohibited Branding Uses
+An unofficial build or derivative must not present itself as an official Leviathan release or use confusingly similar presentation to imply authorization.
 
-Without permission, you may not use Leviathan branding in a way that:
+The software license may separately restrict copying, modification, or redistribution of proprietary Leviathan software.
 
-- Suggests an unofficial launcher is official
-- Suggests endorsement or sponsorship
-- Creates confusion about project ownership
-- Repackages another product as Leviathan Launcher
-- Uses confusingly similar branding for a competing launcher
-- Uses Leviathan artwork or logos as the primary branding of another product
+## Third-party marks
 
----
+Minecraft, Mojang, Microsoft, Xbox, GitHub, and other third-party names and marks belong to their respective owners. Leviathan's use of those names in documentation is for descriptive and interoperability purposes and does not imply affiliation or endorsement.
 
-## Permitted References
+## Minecraft disclaimer
 
-Normal factual references are generally acceptable, such as:
-
-- Reviews
-- News coverage
-- Commentary
-- Tutorials
-- Compatibility information
-- Academic discussion
-- Security research
-- Links to the official repository
-
-Such references should not imply endorsement or official affiliation.
-
----
-
-## Third-Party Trademarks
-
-Minecraft, Microsoft, Xbox, Mojang, Discord, Modrinth, GitHub, Java, Gradle, and other third-party names and marks remain the property of their respective owners.
-
-References to third-party names are made only to describe compatibility, interoperability, services, dependencies, or functionality.
-
----
-
-## No Affiliation
-
-Leviathan Launcher is not affiliated with, sponsored by, endorsed by, operated by, or officially associated with Microsoft Corporation, Mojang Studios, Xbox, or Minecraft unless explicitly stated otherwise by the relevant rights holder.
-
----
-
-## Contact
-
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
-
----
-
-See [LICENSE](LICENSE) for the project's complete proprietary licensing terms.
+**NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.**

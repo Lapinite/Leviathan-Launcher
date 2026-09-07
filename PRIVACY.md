@@ -1,269 +1,134 @@
-# Leviathan Launcher Privacy Policy
+# Leviathan Launcher — Privacy Notice
 
-**Effective date:** September 6, 2026  
-**Project status:** Private Development
+**Status:** Pre-release / private development  
+**Last updated:** 8 September 2026
 
-Leviathan Launcher is an independent third-party desktop launcher for **Minecraft: Java Edition**.
+This notice describes the privacy approach for Leviathan Launcher during private development and the requirements that apply before broader public operation.
 
-This Privacy Policy explains how Leviathan Launcher is intended to handle information during development and, where applicable, in future public releases.
+## 1. Current scope
 
-> **Current access:** Leviathan Launcher is currently a private development project. Development builds are accessible only to the developer, Danni. There is currently no public launcher distribution or public userbase.
+Leviathan is currently in private development. The public repository is primarily documentation and project information. Production account, commerce, marketplace, creator, and social systems must not be represented as live unless they are actually deployed.
 
----
+## 2. Microsoft and Minecraft authentication
 
-## 1. Scope
+Leviathan is designed to authenticate legitimate Minecraft: Java Edition users through Microsoft's authentication infrastructure and the Xbox/XSTS/Minecraft Services chain where required.
 
-This Privacy Policy applies to Leviathan Launcher and project-controlled services that explicitly reference this policy.
+Leviathan does not need users to type their Microsoft password into a Leviathan-controlled password form. Microsoft credentials are entered on Microsoft-controlled authentication surfaces.
 
-It does not replace the privacy policies of third-party services used by the launcher, including Microsoft, Xbox, Mojang Studios, Minecraft Services, GitHub, or other external providers.
+Depending on the authentication stage, the launcher may process technical authentication data such as:
 
-Those services are operated independently and may process information under their own privacy policies and terms.
+- authorization responses;
+- short-lived access tokens;
+- refresh credentials where required for session continuity;
+- Xbox/XSTS authorization data;
+- Minecraft access tokens;
+- Minecraft profile identifiers and username;
+- entitlement or ownership results;
+- authentication error codes and correlation identifiers.
 
----
+Authentication tokens are confidential and must not be committed to source control or intentionally exposed in public logs.
 
-## 2. Microsoft Account Authentication
+## 3. Microsoft Graph
 
-Leviathan Launcher is designed to authenticate users through Microsoft's official authentication infrastructure.
+The current Leviathan Launcher app registration does not require configured Microsoft Graph permissions for the Minecraft authentication flow. Leviathan should not request unrelated access to mail, contacts, calendars, files, Teams, or directory data.
 
-The authentication process may involve:
+If a future feature genuinely requires Microsoft Graph, the privacy notice and permission rationale must be updated before that feature is enabled.
 
-1. Microsoft OAuth
-2. Xbox Live authentication
-3. Xbox Security Token Service (XSTS)
-4. Minecraft Services
-5. Minecraft ownership verification
-6. Minecraft profile retrieval
+## 4. Local launcher data
 
-Leviathan Launcher does **not** ask users to type their Microsoft account password directly into the launcher.
+The launcher may store non-sensitive settings and operational state locally, such as:
 
-Microsoft account credentials are entered through Microsoft's authentication systems.
+- launcher preferences;
+- installation and instance configuration;
+- selected Java/runtime settings;
+- game-version metadata;
+- non-sensitive account display information;
+- diagnostic preferences.
 
----
+Sensitive credentials should use secure operating-system storage where practical. If secure persistent storage is unavailable, the launcher should prefer re-authentication over weak long-term credential storage.
 
-## 3. Information the Launcher May Process
+## 5. Leviathan Accounts
 
-Depending on the feature being used, Leviathan Launcher may process information such as:
+If optional Leviathan Accounts are introduced, the service may need to process data required for identity, security, social, economy, purchase, entitlement, moderation, and recovery functions. Only data necessary for documented purposes should be collected.
 
-- Microsoft authentication tokens
-- Xbox Live authentication tokens
-- XSTS tokens
-- Minecraft access tokens
-- Minecraft profile information
-- Minecraft UUID
-- Minecraft username
-- Minecraft ownership or entitlement status
-- Launcher configuration
-- Installed Minecraft versions
-- Launcher profile settings
-- Local game settings
-- Local Java/runtime configuration
-- Diagnostic information required to troubleshoot launcher errors
+A Leviathan Account is separate from Microsoft/Minecraft authentication and must not be used to bypass Minecraft ownership checks.
 
-The exact information processed may change as the project develops.
+## 6. Security and anti-abuse data
 
----
+To protect users and the platform, Leviathan services may process proportionate security information such as:
 
-## 4. Information Leviathan Launcher Does Not Intend to Collect
+- login and verification timestamps;
+- session and device identifiers;
+- coarse security signals about new or unusual access;
+- failed verification counts;
+- fraud and abuse indicators;
+- account-recovery events;
+- moderation and enforcement records;
+- audit records for sensitive administrative actions.
 
-Leviathan Launcher is not intended to collect:
+Security information should not be retained longer than needed for legitimate security, legal, operational, or dispute purposes.
 
-- Microsoft account passwords
-- Credit-card details
-- Banking information
-- Government identification
-- Authentication credentials for unrelated services
-- Data unrelated to launcher functionality
+## 7. Purchases and payment data
 
-Users should never send Microsoft account passwords, private access tokens, recovery codes, or other sensitive credentials to the developer.
+If commerce is launched, payment processing should use appropriate payment providers. Leviathan should avoid storing full payment-card details unless a compliant payment architecture specifically requires it.
 
----
+Transaction records may include product, amount, currency, payment-provider reference, purchaser account, recipient Minecraft profile identifier, timestamps, refund/reversal state, and fraud state where needed for accounting, support, security, or legal obligations.
 
-## 5. Authentication Tokens
+## 8. Virtual items and provenance
 
-Authentication tokens may be temporarily processed or stored where required to keep a user signed in or to communicate with Microsoft, Xbox, XSTS, and Minecraft Services.
+Where virtual items are supported, Leviathan may retain ownership and provenance records needed to prevent duplication, resolve disputes, enforce refunds or reversals, and preserve legitimate ownership history.
 
-Authentication tokens should be treated as sensitive information.
+A Minecraft username is not a stable ownership key; a stable Minecraft profile identifier may be used where required.
 
-Leviathan Launcher is designed to use tokens only for functionality associated with authentication, ownership verification, Minecraft profile retrieval, and legitimate game launching.
+## 9. Diagnostics and logs
 
-The launcher is not intended to expose authentication tokens publicly or transmit them to unrelated third parties.
+Logs should follow data minimization. Safe diagnostic records may include stage names, timestamps, status codes, non-sensitive configuration state, and correlation identifiers.
 
-Token-storage behavior may change during development. Before any public release, token storage and retention practices may be revised and documented further.
+Logs must not intentionally contain:
 
----
+- Microsoft passwords;
+- access or refresh tokens;
+- authorization headers;
+- session cookies;
+- client secrets;
+- private keys;
+- recovery phrases or recovery codes;
+- payment credentials.
 
-## 6. Local Data
+## 10. Children and minors
 
-Leviathan Launcher may store launcher-related information locally on the user's device, including:
+Before public features directed to or likely to be used by minors are launched, Leviathan must implement an age/consent model appropriate to the relevant jurisdictions and feature risks. A generic age number must not be treated as sufficient for every country or every feature.
 
-- Launcher preferences
-- Launcher profiles
-- Version information
-- Game installation paths
-- Java/runtime configuration
-- Cache data
-- Authentication session information
-- Account profile information required for launcher functionality
+## 11. Retention
 
-Local data remains subject to the security of the user's own device and operating system.
+Leviathan should apply retention periods by data category and purpose. Account status does not justify indefinite retention of every category of personal data.
 
-Users are responsible for protecting access to their computers and operating-system accounts.
+Data may be retained when reasonably required for security, fraud prevention, legal obligations, accounting, dispute resolution, or enforcement, subject to applicable law.
 
----
+## 12. Sharing
 
-## 7. Minecraft Ownership Verification
+Information may be transmitted to third parties where necessary to provide the requested functionality, including Microsoft/Xbox/Minecraft Services for authentication and infrastructure or payment providers for features that actually use those providers.
 
-Leviathan Launcher is intended only for legitimate Minecraft users.
+Leviathan does not authorize advertisers to access private conversations or authentication credentials through this launcher.
 
-The launcher may communicate with Minecraft Services to determine whether the authenticated account owns or otherwise has valid access to **Minecraft: Java Edition**.
+## 13. User rights
 
-Leviathan Launcher does not provide or support cracked authentication, ownership bypasses, license bypasses, account impersonation, or circumvention of entitlement checks.
+Applicable privacy law may provide rights such as access, correction, deletion, restriction, objection, or portability. The exact rights and exceptions depend on the user's jurisdiction and the reason data is processed.
 
----
+Before a public service requiring statutory privacy contacts is launched, the project must publish the legally required operator/contact information.
 
-## 8. Third-Party Services
+## 14. Security
 
-Leviathan Launcher may interact with services provided by third parties, including:
+Security practices are described in `SECURITY.md`. Never post authentication tokens, recovery material, payment credentials, private keys, or other secrets in a public GitHub issue.
 
-- Microsoft
-- Xbox
-- Mojang Studios
-- Minecraft Services
-- GitHub
+## 15. Changes
 
-These services may independently collect, process, retain, or transfer information according to their own privacy policies and terms.
+This notice will be revised before materially different public data processing begins.
 
-Leviathan Launcher does not control the privacy practices of those third-party services.
+## 16. Project reference
 
----
+https://github.com/Lapinite/Leviathan-Launcher
 
-## 9. Telemetry and Analytics
+## 17. Minecraft disclaimer
 
-Leviathan Launcher does not currently operate a public telemetry or analytics program.
-
-If telemetry, crash reporting, usage analytics, or similar features are introduced in a future public release, this Privacy Policy should be updated before or alongside that functionality.
-
-Where practical, future telemetry should be limited to information reasonably necessary for reliability, security, diagnostics, and product improvement.
-
----
-
-## 10. Logs and Diagnostics
-
-The launcher may generate local logs for development, troubleshooting, or error diagnosis.
-
-Logs may contain technical information such as:
-
-- Launcher version
-- Java version
-- Operating-system information
-- Error messages
-- Stack traces
-- Download or authentication error codes
-
-Sensitive credentials should not intentionally be written to logs.
-
-Users should review logs for sensitive information before posting them publicly.
-
----
-
-## 11. Data Sharing
-
-Leviathan Launcher does not intend to sell personal information.
-
-Information may be transmitted to third-party services when necessary for launcher functionality, including Microsoft, Xbox, XSTS, and Minecraft Services authentication.
-
-Information may also be disclosed where required by applicable law or where reasonably necessary to investigate fraud, abuse, security incidents, or threats to users or infrastructure.
-
----
-
-## 12. Data Retention
-
-Because Leviathan Launcher is currently in private development, formal public data-retention periods have not yet been established.
-
-Where information is stored locally, users may generally remove launcher data by deleting the relevant local launcher files or uninstalling the launcher, subject to future implementation details.
-
-Authentication information may also remain subject to Microsoft, Xbox, Mojang, or Minecraft Services retention and revocation systems.
-
----
-
-## 13. Security
-
-Leviathan Launcher aims to follow reasonable security practices for a desktop launcher.
-
-The project is designed so that:
-
-- Microsoft passwords are not handled directly by the launcher
-- No confidential Microsoft client secret is embedded in the desktop application
-- Authentication occurs through official Microsoft systems
-- Authentication tokens are treated as sensitive
-- Ownership is verified using Minecraft Services
-- Security or authentication bypasses are not intentionally supported
-
-No software system can be guaranteed to be completely secure.
-
-Security issues should be reported according to the project's [SECURITY.md](SECURITY.md) policy.
-
----
-
-## 14. Children
-
-Leviathan Launcher does not currently operate a public service or public userbase.
-
-If the project becomes publicly available in the future, additional age-related, parental-consent, or child-privacy requirements may apply depending on the service design and applicable law.
-
----
-
-## 15. International Users
-
-Third-party authentication and game services used by Leviathan Launcher may process information in countries outside the user's country of residence.
-
-Those transfers are governed by the relevant third-party service providers and their privacy policies.
-
----
-
-## 16. Changes to This Privacy Policy
-
-This Privacy Policy may be updated as Leviathan Launcher develops.
-
-Changes may be necessary if the launcher introduces:
-
-- Public distribution
-- User accounts
-- Cloud services
-- Telemetry
-- Analytics
-- Crash reporting
-- Social features
-- Purchases
-- Online cosmetics
-- Synchronization
-- Additional authentication providers
-- New third-party integrations
-
-The effective date at the top of this file should be updated when material changes are made.
-
----
-
-## 17. Contact
-
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
-
-Additional contact methods may be added before public release.
-
----
-
-## 18. Independent Project Notice
-
-Leviathan Launcher is an independent third-party project.
-
-It is not affiliated with, sponsored by, endorsed by, operated by, or officially associated with Microsoft Corporation, Mojang Studios, Xbox, or Minecraft unless explicitly stated otherwise by the relevant rights holder.
-
-Minecraft, Microsoft, Xbox, Mojang, and related trademarks and intellectual property remain the property of their respective owners.
-
----
-
-**Leviathan Launcher**  
-Private Development  
-Copyright © 2026 Danni. All Rights Reserved.
+**NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.**

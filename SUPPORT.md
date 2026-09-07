@@ -1,94 +1,66 @@
-# Leviathan Launcher Support
+# Leviathan Launcher — Support
 
-**Project status:** Private Development  
-**Current access:** Developer Only
+**Status:** Private development  
+**Last updated:** 8 September 2026
 
-Leviathan Launcher is not currently available for public use, so public technical support is not yet offered.
+Leviathan Launcher is currently in private development. Public production support is not yet available.
 
----
+## Project help
 
-## Current Support Status
-
-At this stage:
-
-- There are no official public launcher builds.
-- There is no public beta program.
-- There is no public support queue.
-- Development and testing are currently performed by the developer.
-
-Public support channels may be introduced before or during public testing.
-
----
-
-## Project Information
-
-For current project information, use the official repository:
+For non-sensitive project questions, documentation problems, and reproducible non-security bugs, use the GitHub repository and issue templates:
 
 https://github.com/Lapinite/Leviathan-Launcher
 
-Useful documents:
+## Security issues
 
-- [README.md](README.md)
-- [FAQ](docs/FAQ.md)
-- [SECURITY.md](SECURITY.md)
-- [PRIVACY.md](PRIVACY.md)
-- [TERMS.md](TERMS.md)
-- [CHANGELOG.md](CHANGELOG.md)
+Do not post exploitable security vulnerabilities, credentials, tokens, recovery material, or personal data in a public issue.
 
----
+Use GitHub's private vulnerability-reporting or security-advisory workflow if it is available for the repository. If it is unavailable, first open a non-sensitive support contact without publishing exploit details.
 
-## Security Issues
+See `SECURITY.md` for reporting guidance.
 
-Do not report security-sensitive vulnerabilities through ordinary public support channels.
+## Authentication support
 
-Please follow [SECURITY.md](SECURITY.md).
+Leviathan uses Microsoft-controlled sign-in for Microsoft credentials. Support should never ask for a Microsoft password.
 
-Never post:
+When reporting authentication problems, useful non-sensitive information can include:
 
-- Passwords
-- Access tokens
-- Refresh tokens
-- Session cookies
-- Client secrets
-- Private keys
-- Recovery codes
-- Personal authentication data
+- launcher version;
+- operating system version;
+- authentication stage that failed;
+- provider error code;
+- HTTP status code;
+- timestamp;
+- correlation or trace identifier;
+- sanitized logs.
 
----
+## Do not send
 
-## Future Support
+Never send:
 
-When Leviathan Launcher becomes publicly available, support may include:
+- passwords;
+- access or refresh tokens;
+- authorization codes;
+- session cookies;
+- client secrets;
+- private keys;
+- signing keys;
+- recovery phrases;
+- recovery codes;
+- payment credentials.
 
-- GitHub Issues
-- Documentation
-- FAQ
-- Discord/community support
-- Troubleshooting guides
-- Release notes
-- Known-issues lists
+## Account recovery
 
-Exact support channels will be announced before public release.
+If Leviathan Account recovery is offered, staff-assisted recovery must follow the documented security process. Staff should verify ownership using approved signals and must not treat a recovery phrase alone as sufficient for a high-risk account takeover.
 
----
+## Minecraft ownership
 
-## Unofficial Downloads
+Leviathan support cannot grant Minecraft ownership, override Microsoft's or Minecraft's entitlement decisions, or bypass authentication and licensing requirements.
 
-There are currently no official public launcher downloads.
+## Third-party outages
 
-Any third-party site claiming to distribute an official public Leviathan Launcher build during the current private-development phase should be treated with caution.
+Authentication or game services may fail because of Microsoft, Xbox, Minecraft Services, GitHub, networking, or other third-party systems. Leviathan cannot guarantee availability of systems it does not control.
 
----
+## Project reference
 
-## Contact
-
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
-
-Additional contact options may be introduced later.
-
----
-
-**Leviathan Launcher**  
-Private Development
+https://github.com/Lapinite/Leviathan-Launcher
