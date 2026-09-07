@@ -30,7 +30,7 @@ This roadmap describes current development priorities and may change at any time
 - [x] Integrate Xbox Live authentication
 - [x] Integrate XSTS authentication
 - [x] Integrate Minecraft Services
-- [x] Submit Minecraft AppID approval request
+- [ ] Submit Minecraft AppID review request
 - [ ] Receive Minecraft AppID approval
 - [ ] Verify production Minecraft Services authentication
 - [ ] Finalize secure token/session storage
@@ -184,4 +184,4 @@ These are not promises and may be changed or removed.
 
 **Leviathan Launcher**  
 Roadmap  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.

@@ -20,7 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Minecraft Services authentication integration.
 - Minecraft ownership and profile verification flow.
 - Public desktop-client authentication configuration.
-- Microsoft AppID approval request submitted to Mojang Studios.
+- Microsoft/Minecraft AppID review submission remains pending.
 - Project documentation for privacy, security, licensing, and third-party notices.
 - Public GitHub repository for project documentation, transparency, and review.
 
@@ -102,4 +102,4 @@ When public releases begin, each release should include:
 
 **Leviathan Launcher**  
 Private Development  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.
