@@ -261,7 +261,7 @@ Current development progress:
 - [x] XSTS authentication integration
 - [x] Minecraft Services integration
 - [x] Private developer authentication testing
-- [ ] Submit Minecraft AppID review request
+- [x] Submit Minecraft AppID review request
 - [ ] Minecraft AppID approved
 - [ ] Minecraft Services production authentication fully enabled
 - [ ] Complete Minecraft installation management
