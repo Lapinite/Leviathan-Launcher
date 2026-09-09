@@ -157,7 +157,7 @@ Current status:
 - [x] XSTS authentication integrated
 - [x] Minecraft Services integration implemented
 - [x] Submit AppID review request
-- [ ] AppID approval received
+- [x] AppID approval received
 
 ---
 
