@@ -112,7 +112,7 @@ Leviathan Launcher is configured as a **public desktop client**, meaning no conf
 
 Leviathan Launcher uses its own Microsoft Entra Application ID.
 
-The AppID review submission is currently pending. Production Minecraft Services access remains subject to the applicable Microsoft/Minecraft AppID review and approval requirements.
+The Leviathan Launcher Minecraft AppID review has been approved. Production use remains subject to the applicable Microsoft, Minecraft, Xbox, and service requirements and to the approved application configuration.
 
 The application requires Minecraft Services access for legitimate launcher functionality including:
 
@@ -262,7 +262,7 @@ Current development progress:
 - [x] Minecraft Services integration
 - [x] Private developer authentication testing
 - [x] Submit Minecraft AppID review request
-- [ ] Minecraft AppID approved
+- [x] Minecraft AppID approved
 - [ ] Minecraft Services production authentication fully enabled
 - [ ] Complete Minecraft installation management
 - [ ] Improved Minecraft version management
@@ -334,7 +334,7 @@ At this stage there are:
 - No public authentication testing program
 - No general-access launcher distribution
 
-This may change after development, testing, Minecraft AppID approval, and other release requirements have been completed.
+Public availability remains subject to remaining development, testing, security, release, and distribution requirements.
 
 ---
 
@@ -468,7 +468,7 @@ Leviathan Launcher is currently:
 - Using Xbox Live authentication
 - Using XSTS authentication
 - Integrating Minecraft Services
-- Awaiting Minecraft AppID approval
+- Minecraft AppID approved
 - Being tested privately
 - Preparing for continued development and eventual public testing
 

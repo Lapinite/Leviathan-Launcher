@@ -54,8 +54,8 @@ Examples may include:
 General steps:
 
 1. Read the full error message.
-2. Copy the error code, trace ID, correlation ID, and timestamp.
-3. Do not post access tokens or cookies publicly.
+2. Record the error code and timestamp. Keep diagnostic identifiers private unless requested through an appropriate private support channel.
+3. Do not post tokens, cookies, account details, or administrative identifiers publicly.
 4. Confirm the Leviathan Microsoft Entra app is configured correctly.
 5. Confirm the app is configured as a public desktop client.
 6. Confirm public client flows are enabled where required.
@@ -81,27 +81,22 @@ A Microsoft login can succeed while Minecraft Services still refuses authenticat
 
 Possible causes include:
 
-- The Leviathan AppID has not yet been approved by Mojang Studios.
+- The application configuration does not match the approved configuration.
 - Minecraft Services is temporarily unavailable.
 - Xbox/XSTS authentication failed earlier in the chain.
 - The authenticated account does not have valid Minecraft access.
 
-If the error states that the Microsoft application is not authorized or approved, the issue may be AppID approval rather than launcher code.
+If an authorization error persists, maintainers should verify the approved application configuration and service requirements. Do not substitute another launcher's registration.
 
 ---
 
-## Minecraft AppID Approval Pending
+## Minecraft AppID Approval and Configuration
 
-Leviathan Launcher's AppID review submission is currently pending.
+Leviathan Launcher's Minecraft AppID review has been approved. Production authentication validation remains a separate task.
 
-While approval is pending:
+If Minecraft Services rejects a request, check the approved application configuration, the authentication chain, account entitlement, and service availability. Follow Microsoft/Minecraft guidance for any further review request.
 
-- Microsoft authentication may succeed.
-- Xbox authentication may succeed.
-- XSTS authentication may succeed.
-- Minecraft Services may still reject the application.
-
-After submission, do not repeatedly resubmit the same AppID unless Microsoft/Minecraft requests it.
+Never include application, tenant, or object identifiers, tokens, cookies, or unsanitized logs in public reports.
 
 ---
 
@@ -113,7 +108,7 @@ Possible causes:
 - The wrong Microsoft account was used.
 - Minecraft entitlement services are unavailable.
 - Authentication tokens expired.
-- The AppID is not yet approved.
+- The application configuration or authentication state is invalid.
 
 Try signing out and signing in with the Microsoft account that owns Minecraft.
 

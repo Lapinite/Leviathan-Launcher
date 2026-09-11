@@ -20,7 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Minecraft Services authentication integration.
 - Minecraft ownership and profile verification flow.
 - Public desktop-client authentication configuration.
-- Microsoft/Minecraft AppID review submission remains pending.
+- Minecraft AppID review approved. Production authentication validation remains a separate release requirement.
 - Project documentation for privacy, security, licensing, and third-party notices.
 - Public GitHub repository for project documentation, transparency, and review.
 
@@ -40,7 +40,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Pending
 
-- Mojang Studios approval of the Leviathan Launcher Minecraft AppID.
 - Full production testing against Minecraft Services after AppID approval.
 - Public testing.
 - Public release.
@@ -73,7 +72,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Version `0.1.0` is a private development version.
 - No public binaries or public releases are currently available.
-- Minecraft Services authentication may remain unavailable until the Leviathan Launcher AppID is approved by Mojang Studios.
+- At the time of this private development version, Minecraft AppID approval was outstanding. The review has since been approved; see Unreleased.
 
 ---
 

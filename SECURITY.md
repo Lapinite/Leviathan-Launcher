@@ -1,7 +1,7 @@
-# Leviathan Launcher — Security Policy
+# Leviathan Launcher - Security Policy
 
 **Status:** Private development  
-**Last updated:** 8 September 2026
+**Last updated:** 11 September 2026
 
 Security reports are welcome. Do not publish secrets, active credentials, exploit details that endanger users, or personal data in a public issue.
 
@@ -87,18 +87,7 @@ If secure persistent storage is unavailable, re-authentication is preferable to 
 
 ## Minecraft linking verification
 
-Where Leviathan verifies a Minecraft profile through a verification server, the approved baseline is:
-
-- a verification code remains the same while it is valid;
-- codes expire after 10 minutes;
-- rejoining while the code is still valid returns the same code;
-- five failed attempts trigger a one-hour restriction;
-- ten failed attempts trigger a stronger verification-server restriction or ban;
-- successful verification resets the failed-attempt count;
-- authorized staff may reset attempts or remove the verification restriction only after appropriate account-holder confirmation;
-- sensitive staff actions must be permission-controlled and audited.
-
-No additional escalation schedule should be treated as approved unless separately adopted.
+Where account linking is available, verification must confirm legitimate account control, limit abuse, and protect sensitive staff actions with authorization and audit controls. Operational thresholds and escalation rules are not published here.
 
 ## Leviathan Account recovery
 

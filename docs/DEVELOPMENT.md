@@ -40,8 +40,8 @@ If multiple Java versions are installed, ensure `JAVA_HOME` and your `PATH` poin
 Example:
 
 ```powershell
-$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21"
-$env:Path = "$env:JAVA_HOMEin;$env:Path"
+$env:JAVA_HOME = "<JDK_INSTALL_DIRECTORY>"
+$env:Path = (Join-Path $env:JAVA_HOME "bin") + ";" + $env:Path
 ```
 
 The exact install path may differ.
@@ -109,7 +109,7 @@ If the Gradle wrapper exists:
 If the project uses a custom build script:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .uild.ps1
+powershell -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
 If neither exists yet, follow the current project-specific build instructions.
@@ -135,7 +135,7 @@ or:
 or:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .uild.ps1 -Run -Arguments "ui"
+powershell -ExecutionPolicy Bypass -File .\build.ps1 -Run -Arguments "ui"
 ```
 
 Use the command supported by the current branch.
@@ -251,7 +251,7 @@ Never commit:
 
 ## Microsoft Client ID
 
-The Microsoft Application (Client) ID used by Leviathan Launcher is an application identifier and is not a confidential secret.
+Application identifiers are distinct from confidential secrets. Leviathan's actual application, tenant, and object identifiers must nevertheless remain out of this public repository.
 
 However:
 
@@ -455,7 +455,7 @@ Relevant files may include:
 Before any public release, review:
 
 - Authentication
-- AppID approval
+- Approved application configuration and applicable service requirements
 - Security
 - Token storage
 - Privacy policy

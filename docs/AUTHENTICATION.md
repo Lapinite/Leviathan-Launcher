@@ -85,7 +85,7 @@ Provider errors should be surfaced without leaking tokens or authorization heade
 
 ## Minecraft Services
 
-The XSTS result is used to authenticate with Minecraft Services. Production use remains subject to applicable AppID approval requirements.
+The XSTS result is used to authenticate with Minecraft Services. Leviathan Launcher's Minecraft AppID review has been approved. Production use remains subject to the approved configuration and applicable service requirements.
 
 The project must not claim approval until it has actually been granted.
 
