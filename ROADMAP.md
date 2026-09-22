@@ -6,7 +6,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 1 — Project Foundation
+## Phase 1: Project Foundation
 
 - [x] Establish Leviathan Launcher project
 - [x] Create public documentation repository
@@ -22,7 +22,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 2 — Microsoft & Minecraft Authentication
+## Phase 2: Microsoft & Minecraft Authentication
 
 - [x] Create Microsoft Entra application registration
 - [x] Configure public desktop client
@@ -30,8 +30,8 @@ This roadmap describes current development priorities and may change at any time
 - [x] Integrate Xbox Live authentication
 - [x] Integrate XSTS authentication
 - [x] Integrate Minecraft Services
-- [ ] Submit Minecraft AppID review request
-- [ ] Receive Minecraft AppID approval
+- [x] Submit Minecraft AppID review request
+- [x] Receive Minecraft AppID approval
 - [ ] Verify production Minecraft Services authentication
 - [ ] Finalize secure token/session storage
 - [ ] Finalize sign-out/session invalidation behavior
@@ -40,7 +40,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 3 — Launcher Core
+## Phase 3: Launcher Core
 
 - [ ] Finalize launcher profile system
 - [ ] Complete Minecraft version management
@@ -56,7 +56,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 4 — User Experience
+## Phase 4: User Experience
 
 - [ ] Finalize primary launcher UI
 - [ ] Home/dashboard
@@ -73,7 +73,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 5 — Content & Integrations
+## Phase 5: Content & Integrations
 
 - [ ] Modrinth integration
 - [ ] Mod management
@@ -87,7 +87,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 6 — Customization & Cosmetics
+## Phase 6: Customization & Cosmetics
 
 - [ ] Theme system
 - [ ] Launcher customization
@@ -103,7 +103,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 7 — Security & Release Engineering
+## Phase 7: Security & Release Engineering
 
 - [ ] Dependency review
 - [ ] Security audit
@@ -120,7 +120,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 8 — Internal Testing
+## Phase 8: Internal Testing
 
 - [ ] Authentication testing
 - [ ] Install/repair testing
@@ -135,7 +135,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 9 — Public Beta Preparation
+## Phase 9: Public Beta Preparation
 
 - [ ] Decide beta eligibility
 - [ ] Publish installation documentation
@@ -150,7 +150,7 @@ This roadmap describes current development priorities and may change at any time
 
 ---
 
-## Phase 10 — Public Release
+## Phase 10: Public Release
 
 - [ ] Stable launcher build
 - [ ] Public release announcement

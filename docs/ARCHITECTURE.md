@@ -370,7 +370,7 @@ Leviathan Launcher is currently:
 - Accessible only to the developer
 - Not publicly distributed
 - Under active architectural development
-- Awaiting Minecraft AppID approval
+- Minecraft AppID approved; production authentication validation remains separate
 - Subject to significant internal changes before public release
 
 This architecture document should be updated as major systems change.

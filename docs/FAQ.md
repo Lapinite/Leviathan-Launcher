@@ -146,7 +146,7 @@ The Microsoft Application (Client) ID is an identifier and is not a secret.
 
 Third-party launcher applications may require approval before Minecraft Services accepts their Microsoft application registration for the required authentication APIs.
 
-Leviathan Launcher's AppID review submission is currently pending.
+Leviathan Launcher's Minecraft AppID review has been approved. Approval does not establish that production authentication is fully enabled or that public builds are available.
 
 Current status:
 
@@ -157,7 +157,7 @@ Current status:
 - [x] XSTS authentication integrated
 - [x] Minecraft Services integration implemented
 - [x] Submit AppID review request
-- [ ] AppID approval received
+- [x] AppID approval received
 
 ---
 

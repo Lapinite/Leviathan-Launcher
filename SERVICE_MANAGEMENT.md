@@ -1,4 +1,4 @@
-# Leviathan Launcher — Service Management
+# Leviathan Launcher: Service Management
 
 **Status:** Private development / pre-release  
 **Last updated:** 8 September 2026
@@ -74,7 +74,7 @@ If future Leviathan backend services require confidential Microsoft credentials 
 
 ## Minecraft Services approval
 
-Production Minecraft Services access remains subject to the applicable Microsoft/Minecraft AppID review and approval requirements.
+The Leviathan Launcher Minecraft AppID review has been approved. Production access remains subject to the approved configuration and applicable service requirements; full production authentication validation remains separate.
 
 Leviathan must not claim approval before it has actually been granted and verified.
 
