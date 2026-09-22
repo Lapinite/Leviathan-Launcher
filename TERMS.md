@@ -1,362 +1,113 @@
-# Leviathan Launcher Terms of Use
+# Leviathan Launcher — Terms of Use
 
-**Effective date:** September 6, 2026  
-**Project status:** Private Development
+**Status:** Pre-release / private development  
+**Last updated:** 8 September 2026
 
-These Terms of Use ("Terms") govern access to and use of Leviathan Launcher ("Leviathan", the "Launcher", the "Software", or the "Service") when it is made available by the project developer.
+These Terms of Use govern authorized use of Leviathan Launcher and project-operated services that expressly link to these Terms. Leviathan Launcher is an independently developed third-party project for Minecraft: Java Edition.
 
-Leviathan Launcher is currently a private development project and is not yet generally available to the public.
+## 1. Current availability
 
-By installing, accessing, or using an authorized build of Leviathan Launcher, you agree to these Terms.
+Leviathan Launcher is currently in private development. The public GitHub repository is used for project information, documentation, transparency, and review. Public visibility of repository content does not mean that a public production build, commercial service, or Minecraft Services approval is available.
 
-If you do not agree to these Terms, do not use the Launcher.
+## 2. Eligibility and lawful use
 
----
+You may use an officially distributed Leviathan build only if you are legally permitted to do so and you comply with applicable law, these Terms, the software license, and applicable third-party terms.
 
-## 1. About Leviathan Launcher
+You are responsible for having a legitimate right to use Minecraft and any Microsoft account used with the launcher. Leviathan does not grant a Minecraft license or ownership entitlement.
 
-Leviathan Launcher is an independent third-party desktop launcher intended for legitimate users of **Minecraft: Java Edition**.
+## 3. Microsoft and Minecraft authentication
 
-The project is developed and maintained by **Danni**.
+Leviathan uses Microsoft's authentication infrastructure as a public desktop application and may continue through Xbox Live, XSTS, and Minecraft Services where required for legitimate Minecraft authentication.
 
-Leviathan Launcher is not an official Microsoft, Mojang Studios, Xbox, or Minecraft product.
+Leviathan must not:
 
----
+- request or collect a Microsoft account password through a Leviathan password form;
+- bypass Microsoft authentication;
+- bypass Minecraft ownership, entitlement, or license checks;
+- disable Microsoft or Minecraft safety controls;
+- impersonate another application or reuse another application's approval or credentials.
 
-## 2. Eligibility and Account Requirements
+A separate Leviathan Account, if offered, is optional platform identity and does not replace Microsoft/Minecraft authentication for launching Minecraft.
 
-You are responsible for ensuring that you are legally permitted to use Leviathan Launcher and any connected third-party services.
+## 4. Accounts and linked identities
 
-Where Minecraft authentication is used:
+Where Leviathan Accounts are made available, users are responsible for maintaining the security of their account and recovery methods. Linking a Minecraft profile must use a verification process controlled by Leviathan. Linking or unlinking must not be used as an unofficial transfer mechanism for platform entitlements.
 
-- You must use your own authorized Microsoft account.
-- You must have legitimate access to Minecraft: Java Edition where ownership or entitlement is required.
-- You must comply with applicable Microsoft, Xbox, Mojang, and Minecraft terms.
-- You must not use stolen, shared without permission, compromised, or unauthorized accounts.
+One Leviathan Account may support multiple verified Minecraft profiles where the feature is available. Minecraft-profile identifiers may be used to maintain stable ownership or recipient records because usernames can change.
 
-Additional age or parental-consent requirements may apply under applicable law or third-party service terms.
+## 5. Platform features and virtual items
 
----
+Features such as Premium, LeviCoins, cosmetics, gifting, trading, marketplace functionality, or creator features may be introduced only when they are technically, legally, and policy-compliant.
 
-## 3. Microsoft and Minecraft Authentication
+LeviCoins, if offered, are platform credits. They are not cryptocurrency, legal tender, a bank deposit, or an investment. They must not be represented as Minecoins or another official Microsoft/Mojang currency and are not intended for cash-out or external value conversion.
 
-Leviathan Launcher is designed to use official Microsoft authentication infrastructure.
+A feature being described in documentation does not mean it is publicly available.
 
-The authentication process may involve:
+## 6. Minecraft-integrated commercial features
 
-- Microsoft OAuth
-- Xbox Live
-- Xbox Security Token Service (XSTS)
-- Minecraft Services
+Paid functionality that is visible or active inside Minecraft, including client cosmetics or similar entitlements, is subject to applicable Minecraft rules and may remain disabled unless Leviathan has sufficient policy and legal confidence to offer it.
 
-Leviathan Launcher is not intended to request your Microsoft password directly.
+Nothing in these Terms grants permission to sell, redistribute, or commercially exploit Minecraft content contrary to Mojang/Microsoft rules.
 
-You are responsible for protecting your account credentials, devices, and authentication sessions.
+## 7. Prohibited conduct
 
----
+You may not use Leviathan to:
 
-## 4. No Ownership or License Bypass
+- steal credentials, tokens, sessions, accounts, or recovery material;
+- bypass authentication, ownership, entitlement, licensing, or safety checks;
+- distribute malware or intentionally harmful code;
+- exploit Leviathan services, economies, markets, or verification systems;
+- perform fraud, chargeback abuse, wash trading, self-dealing, fake sales, or reputation manipulation;
+- duplicate, forge, or tamper with entitlements or virtual assets;
+- impersonate Leviathan staff or misrepresent an unofficial build as official;
+- attack, overload, probe, or access systems without authorization;
+- use another person's account or identity without authorization;
+- violate applicable Microsoft, Xbox, Minecraft, GitHub, payment-provider, or platform rules.
 
-You may not use Leviathan Launcher to:
+Good-faith security research performed under an applicable security policy is not prohibited by this section.
 
-- Bypass Minecraft ownership checks
-- Circumvent licensing requirements
-- Bypass Microsoft authentication
-- Bypass Xbox or XSTS authorization
-- Circumvent Minecraft Services security controls
-- Impersonate another account
-- Access Minecraft without authorization
-- Facilitate cracked or pirated access
+## 8. Intellectual property
 
-Leviathan Launcher is intended to work with legitimate user accounts and legitimate game access.
+Leviathan's original software, documentation, artwork, branding, and other project materials are protected by applicable intellectual-property law and are licensed only as stated in the repository's `LICENSE` and other applicable notices.
 
----
+Minecraft, Microsoft, Xbox, Mojang, GitHub, and other third-party names and marks belong to their respective owners.
 
-## 5. Acceptable Use
+## 9. Third-party services
 
-You agree not to use Leviathan Launcher for:
+Leviathan depends on third-party services that Leviathan does not control. Their availability, authentication decisions, entitlement decisions, safety systems, and terms are controlled by the relevant providers.
 
-- Credential theft
-- Phishing
-- Malware distribution
-- Unauthorized access
-- Account theft
-- Token theft
-- Fraud
-- Harassment
-- Service disruption
-- Exploitation of third-party systems
-- Circumvention of security measures
-- Automated abuse of Microsoft, Xbox, Mojang, Minecraft Services, GitHub, Modrinth, or other services
-- Any unlawful activity
+Third-party service changes may cause Leviathan features to stop working or require changes.
 
-You must not attempt to use Leviathan Launcher in a way that harms the project, its users, or third-party infrastructure.
+## 10. Security and suspension
 
----
+Leviathan may restrict or suspend access to project-operated services when reasonably necessary to protect accounts, users, the platform, third parties, or system integrity, or to investigate suspected abuse.
 
-## 6. Software License
+High-risk actions may require additional verification or temporary security holds.
 
-Use of Leviathan Launcher is subject to the proprietary license in [LICENSE](LICENSE).
+## 11. Privacy
 
-Unless explicitly permitted:
+Personal-data handling is described in `PRIVACY.md`. Authentication tokens and other credentials are sensitive and must not be posted in public issues, logs, screenshots, or support messages.
 
-- You may not redistribute Leviathan Launcher.
-- You may not repackage it.
-- You may not sell it.
-- You may not publish modified builds.
-- You may not use its source code to create a competing or derivative launcher.
-- You may not reuse Leviathan branding or protected assets.
+## 12. Pre-release software
 
-These Terms do not replace the software license. If there is a conflict regarding intellectual-property rights, the more specific applicable license terms govern.
+Pre-release software may be incomplete, unavailable, unstable, or changed without notice. Do not rely on a private-development build for critical use.
 
----
+## 13. Disclaimer
 
-## 7. Public Repository
+To the maximum extent permitted by applicable law, pre-release Leviathan software and documentation are provided without guarantees of uninterrupted availability, compatibility, or fitness for a particular purpose. Mandatory rights that cannot legally be excluded remain unaffected.
 
-Leviathan Launcher may have a publicly visible GitHub repository.
+## 14. Changes
 
-Public visibility is provided for documentation, transparency, development organization, review, and related project purposes.
+These Terms may be updated as Leviathan moves from private development to testing or public release. Material changes affecting public users should be published before they take effect where required.
 
-Public visibility does not make Leviathan Launcher open-source software and does not grant rights beyond those expressly provided in [LICENSE](LICENSE).
+## 15. Contact and project reference
 
----
+Current public project reference:
 
-## 8. Third-Party Services
+https://github.com/Lapinite/Leviathan-Launcher
 
-Leviathan Launcher may rely on or interact with third-party services, including:
+For support, see `SUPPORT.md`. For security issues, see `SECURITY.md`.
 
-- Microsoft
-- Xbox
-- Mojang Studios
-- Minecraft Services
-- GitHub
-- Modrinth
-- Discord
+## 16. Minecraft disclaimer
 
-These services are governed by their own terms, privacy policies, availability, and technical requirements.
-
-Leviathan Launcher does not control those services and cannot guarantee their availability or continued compatibility.
-
----
-
-## 9. Mods and Third-Party Content
-
-Leviathan Launcher may support mods, modpacks, resource packs, shaders, skins, servers, or other third-party content.
-
-You are responsible for ensuring that your use of third-party content complies with the creator's license and applicable terms.
-
-Leviathan Launcher does not automatically grant permission to copy, redistribute, monetize, or modify third-party content.
-
----
-
-## 10. Local Files and Backups
-
-Leviathan Launcher may create, modify, download, or manage local files associated with launcher functionality.
-
-You are responsible for maintaining backups of important data.
-
-Before using experimental or pre-release builds, you should understand that bugs may cause:
-
-- File corruption
-- Configuration loss
-- Download failures
-- Game launch failures
-- Profile loss
-- Compatibility problems
-
----
-
-## 11. Pre-Release Software
-
-Until a stable public release is announced, Leviathan Launcher should be considered pre-release software.
-
-Pre-release builds may:
-
-- Contain bugs
-- Be incomplete
-- Change without notice
-- Break compatibility
-- Lose settings or data
-- Stop working with third-party services
-- Be withdrawn at any time
-
-No guarantee of backward compatibility is made during private development.
-
----
-
-## 12. Updates
-
-Leviathan Launcher may require updates to maintain compatibility, security, or access to third-party services.
-
-Future versions may include automatic update functionality.
-
-The project may stop supporting outdated versions where necessary for security, compatibility, or infrastructure reasons.
-
----
-
-## 13. Cosmetics, Virtual Items, and Future Paid Features
-
-Leviathan Launcher may introduce optional cosmetics, virtual items, subscriptions, supporter features, marketplace features, gift cards, virtual currency, or other paid functionality in the future.
-
-If such functionality is introduced:
-
-- Additional purchase terms may apply.
-- Pricing and availability will be disclosed before purchase.
-- Virtual items may be non-transferable unless stated otherwise.
-- Virtual items may have no cash value unless explicitly required by law or stated otherwise.
-- Refund rights will be handled in accordance with applicable law and any specific purchase terms.
-
-No paid feature is currently guaranteed to be introduced.
-
----
-
-## 14. Merchandise
-
-The project may offer physical merchandise in the future.
-
-Any physical product sales may be subject to separate store terms covering:
-
-- Payment
-- Shipping
-- Returns
-- Refunds
-- Consumer rights
-- Taxes
-- Delivery
-- Product availability
-
-These Terms alone are not intended to serve as complete e-commerce terms for future merchandise sales.
-
----
-
-## 15. Privacy
-
-Use of Leviathan Launcher is also subject to [PRIVACY.md](PRIVACY.md).
-
-Third-party services may independently process information under their own privacy policies.
-
----
-
-## 16. Security
-
-Security-related expectations and vulnerability reporting are described in [SECURITY.md](SECURITY.md).
-
-You must not deliberately attempt to:
-
-- Steal credentials
-- Extract protected secrets
-- Gain unauthorized access
-- Deploy malware
-- Disrupt services
-- Access accounts or data without authorization
-
-Good-faith security research should follow the project's security policy.
-
----
-
-## 17. Suspension or Termination
-
-Where Leviathan-controlled online services exist in the future, access may be restricted or terminated for serious violations of these Terms, security abuse, fraud, unlawful activity, or misuse of project infrastructure.
-
-The project may also discontinue features, services, or builds at any time.
-
----
-
-## 18. Intellectual Property
-
-Leviathan Launcher source code, branding, logos, icons, original artwork, user-interface assets, documentation, and other original materials are protected by applicable intellectual-property laws.
-
-Third-party trademarks and materials remain the property of their respective owners.
-
-See:
-
-- [LICENSE](LICENSE)
-- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
-- [TRADEMARKS.md](TRADEMARKS.md)
-
----
-
-## 19. Disclaimer of Warranties
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LEVIATHAN LAUNCHER IS PROVIDED "AS IS" AND "AS AVAILABLE."
-
-NO GUARANTEE IS MADE THAT THE LAUNCHER WILL BE:
-
-- ERROR-FREE
-- UNINTERRUPTED
-- SECURE
-- COMPATIBLE WITH EVERY SYSTEM
-- AVAILABLE PERMANENTLY
-- FREE FROM DATA LOSS
-- COMPATIBLE WITH EVERY MINECRAFT VERSION OR THIRD-PARTY MODIFICATION
-
-NOTHING IN THESE TERMS EXCLUDES WARRANTIES OR RIGHTS THAT CANNOT LAWFULLY BE EXCLUDED.
-
----
-
-## 20. Limitation of Liability
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING FROM USE OF OR INABILITY TO USE LEVIATHAN LAUNCHER.
-
-THIS MAY INCLUDE LOSS OF DATA, LOST PROFITS, ACCOUNT ISSUES, SERVICE INTERRUPTIONS, OR SYSTEM DAMAGE.
-
-NOTHING IN THESE TERMS LIMITS LIABILITY WHERE SUCH LIMITATION IS PROHIBITED BY LAW.
-
----
-
-## 21. Changes to These Terms
-
-These Terms may be updated as Leviathan Launcher develops.
-
-Material changes may be required before public release, especially if the project introduces:
-
-- Public accounts
-- Cloud services
-- Payments
-- Subscriptions
-- Virtual currency
-- Marketplace features
-- Merchandise
-- Public multiplayer/community features
-- User-generated content
-- Public support services
-
-The effective date should be updated when material changes are made.
-
----
-
-## 22. Governing Law
-
-To the extent permitted by law, these Terms are intended to be interpreted under the laws of Denmark.
-
-Nothing in these Terms removes mandatory consumer, privacy, contract, or other rights that apply under Danish law, European Union law, or other applicable law.
-
----
-
-## 23. Severability
-
-If any provision of these Terms is found invalid or unenforceable, the remaining provisions will continue to apply to the extent permitted by law.
-
----
-
-## 24. Contact
-
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
-
-Additional contact information may be added before public release.
-
----
-
-## 25. Independent Project Notice
-
-Leviathan Launcher is an independent third-party project.
-
-It is not affiliated with, sponsored by, endorsed by, operated by, or officially associated with Microsoft Corporation, Mojang Studios, Xbox, or Minecraft unless explicitly stated otherwise by the relevant rights holder.
-
----
-
-**Leviathan Launcher**  
-Terms of Use  
-Copyright © 2026 Danni. All Rights Reserved.
+**NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.**

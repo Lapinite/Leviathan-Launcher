@@ -1,566 +1,75 @@
 LEVIATHAN LAUNCHER PROPRIETARY SOFTWARE LICENSE
-Version 1.0 — September 2026
+Version 1.1 — 8 September 2026
 
-Copyright © 2026 Danni.
-All Rights Reserved.
+Copyright © 2026 Leviathan project owner.
+All rights reserved.
 
-======================================================================
-1. INTRODUCTION
-======================================================================
+1. SCOPE
 
-This Proprietary Software License ("License") governs the source code,
-compiled software, executable files, user interface designs, graphics,
-branding, documentation, configuration files, scripts, and other
-materials associated with Leviathan Launcher ("Leviathan", the
-"Launcher", or the "Software").
+This license governs original Leviathan Launcher source code, compiled software, documentation, configuration, scripts, artwork, user-interface assets, branding, and other original project materials, except material that is expressly identified as third-party content or subject to another license.
 
-Leviathan Launcher is an independently developed third-party desktop
-launcher intended for use with Minecraft: Java Edition by legitimate
-owners of the game.
+Leviathan Launcher is proprietary software. Public visibility of a repository or file does not by itself grant open-source rights.
 
-Unless explicitly stated otherwise in writing by the copyright holder,
-Leviathan Launcher is proprietary software and is NOT open-source
-software.
+2. LIMITED END-USER LICENSE
 
-The public availability of any source code, repository, documentation,
-screenshots, development information, or other project materials does
-not grant permission to copy, modify, redistribute, repackage, sell,
-publish, sublicense, or create derivative works from those materials.
+Where an official Leviathan build is lawfully made available, the project owner grants the recipient a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to install and run that official unmodified build for personal, lawful use, subject to the Terms of Use and applicable third-party terms.
 
-All rights not expressly granted by this License are reserved.
+No ownership rights are transferred.
 
-======================================================================
-2. COPYRIGHT HOLDER
-======================================================================
+3. NO GENERAL SOURCE LICENSE
 
-Leviathan Launcher and original materials created specifically for the
-project are Copyright © 2026 Danni.
+Unless separate written permission is granted, no permission is given to copy, modify, redistribute, publish, sublicense, sell, repackage, or create derivative works from Leviathan's proprietary source code or original project assets.
 
-The copyright holder reserves all rights provided under applicable
-copyright, intellectual property, trademark, and related laws.
+Repository hosting features such as viewing, cloning, or forking do not create a broader copyright license than applicable law or an express written license provides.
 
-Third-party software, libraries, trademarks, APIs, game assets, and
-other third-party materials remain the property of their respective
-owners and may be governed by separate licenses or terms.
+4. PROHIBITED USE
 
-======================================================================
-3. LIMITED END-USER LICENSE
-======================================================================
+Except where applicable law gives a non-waivable right, you may not without authorization:
 
-Where Leviathan Launcher is officially made available to the public,
-the copyright holder grants individual end users a limited,
-revocable, non-exclusive, non-transferable, non-sublicensable license
-to download, install, and run an official unmodified build of
-Leviathan Launcher for personal, lawful, non-commercial use.
+(a) redistribute or publicly host Leviathan software or source code;
+(b) repackage or distribute modified builds;
+(c) sell, sublicense, rent, lease, or commercially exploit Leviathan software;
+(d) use substantial Leviathan source code to create a competing or derivative launcher;
+(e) remove or falsify copyright, attribution, or proprietary notices;
+(f) use Leviathan branding in a way likely to imply official affiliation or endorsement;
+(g) use Leviathan authentication registrations, infrastructure, or service authorization for another application;
+(h) obtain or misuse credentials, tokens, private keys, signing keys, or protected infrastructure information;
+(i) use the software for malware, credential theft, account theft, piracy, authentication bypass, entitlement bypass, or license circumvention.
 
-This permission applies only to official builds distributed or
-authorized by the Leviathan Launcher developer.
+5. CONTRIBUTIONS
 
-This permission does not grant ownership of the Software or any
-intellectual property associated with it.
+Contributions are governed by CONTRIBUTING.md. A contribution is not accepted merely because a pull request can be opened.
 
-No ownership rights are transferred to the user.
+6. THIRD-PARTY MATERIAL
 
-======================================================================
-4. SOURCE CODE AVAILABILITY
-======================================================================
+Third-party libraries, services, APIs, game assets, trademarks, and other materials remain governed by their own licenses and terms. Nothing in this license grants rights in third-party intellectual property.
 
-Some or all Leviathan Launcher source code may be publicly visible on
-GitHub or another development platform.
+See THIRD_PARTY_NOTICES.md for the repository's third-party notice policy.
 
-Public visibility is provided for purposes that may include:
+7. MINECRAFT AND MICROSOFT
 
-- development transparency;
-- project documentation;
-- security review;
-- Microsoft or Mojang application review;
-- technical evaluation;
-- project history;
-- development collaboration specifically authorized by the developer.
+Leviathan Launcher is independently developed. This license grants no rights to Minecraft, Mojang, Microsoft, Xbox, or their intellectual property.
 
-Public visibility does NOT mean that the project is open source.
+Use of Leviathan does not grant a Minecraft license or permission to bypass third-party authentication, ownership, entitlement, safety, or licensing controls.
 
-Unless the copyright holder provides separate written permission, the
-source code may not be copied, reused, modified, redistributed,
-incorporated into another project, republished, relicensed, sold, or
-used to create a competing or derivative launcher.
+8. BRANDING
 
-GitHub functionality that technically permits viewing or forking a
-public repository does not constitute a broader license from the
-copyright holder to use, redistribute, publish, modify, or commercially
-exploit Leviathan Launcher code.
+Original Leviathan names, logos, icons, artwork, and visual identity are reserved project assets except to the extent applicable law permits factual reference, commentary, interoperability description, or other lawful use.
 
-======================================================================
-5. PROHIBITED USE
-======================================================================
+See TRADEMARKS.md.
 
-Except where explicitly permitted in writing by the copyright holder,
-you may not:
+9. DISCLAIMER
 
-a. Copy substantial portions of Leviathan Launcher source code.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LEVIATHAN SOFTWARE PROVIDED DURING PRIVATE DEVELOPMENT OR PRE-RELEASE IS PROVIDED “AS IS” WITHOUT WARRANTIES OF UNINTERRUPTED OPERATION, ERROR-FREE PERFORMANCE, OR FITNESS FOR A PARTICULAR PURPOSE. RIGHTS THAT CANNOT LEGALLY BE EXCLUDED REMAIN UNAFFECTED.
 
-b. Redistribute the Software or source code.
+10. TERMINATION
 
-c. Sell, rent, lease, sublicense, monetize, or commercially exploit
-   Leviathan Launcher.
+Rights granted under this license terminate if the recipient materially violates the license and does not cure the violation where applicable law requires an opportunity to cure.
 
-d. Repackage Leviathan Launcher under another name.
+11. RESERVATION OF RIGHTS
 
-e. Create or distribute modified versions of Leviathan Launcher.
+All rights not expressly granted are reserved.
 
-f. Create a fork intended for public distribution.
+12. NO OFFICIAL MINECRAFT AFFILIATION
 
-g. Use Leviathan Launcher source code as the basis for another
-   Minecraft launcher, game launcher, client, or competing product.
-
-h. Remove, hide, modify, or misrepresent copyright notices, attribution
-   notices, branding notices, or proprietary notices.
-
-i. Claim Leviathan Launcher, its source code, artwork, interface,
-   branding, or other original materials as your own.
-
-j. Sell or redistribute Leviathan branding, artwork, icons, logos,
-   screenshots, interface designs, or other protected assets.
-
-k. Use Leviathan infrastructure, authentication registrations,
-   credentials, API access, servers, endpoints, or services for another
-   application without authorization.
-
-l. Use the Leviathan Microsoft Entra Application ID or any other
-   Leviathan-owned application registration to authenticate another
-   launcher, client, service, or application.
-
-m. Extract or attempt to obtain confidential credentials, access
-   tokens, private keys, signing keys, secrets, or protected
-   infrastructure information.
-
-n. Use Leviathan Launcher for credential theft, phishing, malware,
-   account theft, unauthorized access, piracy, ownership bypasses, or
-   license circumvention.
-
-o. Represent an unofficial version, modification, fork, or derivative
-   as an official Leviathan Launcher product.
-
-Nothing in this License is intended to prohibit activities that cannot
-lawfully be restricted under applicable law.
-
-======================================================================
-6. MODIFICATION
-======================================================================
-
-No general permission is granted to modify Leviathan Launcher.
-
-Private modifications, patches, forks, ports, or derivative works
-require prior written permission from the copyright holder unless
-applicable law expressly provides otherwise.
-
-Permission granted for one modification does not automatically grant
-permission for future modifications, redistribution, publication, or
-commercial use.
-
-The copyright holder may impose additional conditions when granting
-permission.
-
-======================================================================
-7. REDISTRIBUTION
-======================================================================
-
-Leviathan Launcher may only be distributed through channels authorized
-by the developer.
-
-Unless explicitly authorized in writing, third parties may not host,
-mirror, bundle, redistribute, re-upload, repackage, or provide
-downloads of Leviathan Launcher.
-
-This includes, without limitation:
-
-unofficial mirrors, modified builds, launcher bundles, software
-collections, installer packages, repackaged archives, download sites,
-paid downloads, subscription services, and third-party application
-stores.
-
-Linking to an official Leviathan Launcher download page is permitted
-unless otherwise stated.
-
-======================================================================
-8. BRANDING AND TRADEMARK-LIKE RIGHTS
-======================================================================
-
-The following project identifiers and associated branding are reserved
-for the Leviathan Launcher project:
-
-"Leviathan Launcher"
-
-the Leviathan name,
-
-the Leviathan dragon branding,
-
-Leviathan launcher icons,
-
-Leviathan logos,
-
-Leviathan visual identity,
-
-Leviathan UI branding,
-
-Leviathan promotional artwork,
-
-and other original project-specific identifiers.
-
-No permission is granted to use Leviathan branding in a manner that
-suggests affiliation, endorsement, sponsorship, authorization, or
-official status.
-
-You may not use confusingly similar names, logos, icons, branding, or
-presentation for another launcher or competing product where such use
-could reasonably cause confusion.
-
-Permitted factual references to Leviathan Launcher, such as reviews,
-news articles, compatibility documentation, discussion, or commentary,
-are not prohibited by this section.
-
-======================================================================
-9. ARTWORK, ICONS, AND USER INTERFACE ASSETS
-======================================================================
-
-Unless specifically identified as third-party content, original
-Leviathan Launcher artwork, icons, graphics, animations, interface
-elements, promotional images, launcher designs, and other visual assets
-are All Rights Reserved.
-
-They may not be extracted and reused in another project without written
-permission.
-
-This restriction applies independently from any license governing
-third-party libraries contained in the Software.
-
-======================================================================
-10. MICROSOFT AND MINECRAFT AUTHENTICATION
-======================================================================
-
-Leviathan Launcher may integrate with services operated by Microsoft,
-Xbox, Mojang Studios, and Minecraft Services.
-
-Leviathan Launcher may use its own Microsoft Entra application
-registration and Application ID.
-
-The Leviathan application registration, API authorization, associated
-configuration, and approval status are intended exclusively for
-Leviathan Launcher.
-
-No permission is granted to reuse Leviathan's Microsoft Application ID,
-tenant configuration, authentication approval, API access, or related
-identity configuration for another application.
-
-Third parties developing their own applications are responsible for
-obtaining and maintaining their own application registrations,
-credentials, permissions, approvals, and API authorization.
-
-======================================================================
-11. ACCOUNT AND AUTHENTICATION SECURITY
-======================================================================
-
-Leviathan Launcher is intended to authenticate users through official
-Microsoft authentication systems.
-
-The project is not intended to collect Microsoft account passwords.
-
-Users must not use Leviathan Launcher or modified versions of it to
-bypass Microsoft, Xbox, Mojang, or Minecraft authentication,
-entitlement, ownership, security, or licensing systems.
-
-Users are responsible for protecting their own accounts and complying
-with the terms applicable to Microsoft, Xbox, Minecraft, and related
-services.
-
-======================================================================
-12. THIRD-PARTY COMPONENTS
-======================================================================
-
-Leviathan Launcher may incorporate third-party libraries, frameworks,
-APIs, assets, or other components.
-
-Those components remain governed by their respective copyright notices,
-licenses, and terms.
-
-This License applies only to material owned or controlled by the
-Leviathan Launcher copyright holder.
-
-Nothing in this License attempts to replace, override, restrict, or
-relicense third-party software under terms that legally permit broader
-rights.
-
-Where required, third-party license notices should be retained with
-distributed builds or source code.
-
-======================================================================
-13. MINECRAFT, MOJANG, MICROSOFT, AND XBOX
-======================================================================
-
-Leviathan Launcher is an independent third-party project.
-
-Leviathan Launcher is not affiliated with, sponsored by, endorsed by,
-approved as an official product of, or operated by Microsoft
-Corporation, Mojang Studios, Xbox, or Minecraft unless explicitly
-stated otherwise by the relevant rights holder.
-
-Minecraft, Microsoft, Xbox, Mojang, and related names, marks, logos,
-game assets, and intellectual property belong to their respective
-owners.
-
-References to those products and services are made solely to describe
-compatibility, authentication, interoperability, or functionality.
-
-======================================================================
-14. MINECRAFT OWNERSHIP AND LICENSING
-======================================================================
-
-Leviathan Launcher is intended for users who have legitimate access to
-Minecraft: Java Edition.
-
-Leviathan Launcher does not grant a Minecraft license and does not
-transfer ownership of Minecraft.
-
-Users remain responsible for purchasing, owning, licensing, and using
-Minecraft in accordance with applicable Microsoft and Mojang terms.
-
-Leviathan Launcher must not be used to intentionally bypass game
-ownership checks, authentication requirements, entitlement checks,
-licenses, or other access controls.
-
-======================================================================
-15. NO IMPLIED RIGHTS
-======================================================================
-
-No rights are granted by implication, estoppel, publication, public
-repository visibility, availability of binaries, screenshots,
-documentation, or otherwise.
-
-Any permission not expressly granted by this License remains reserved
-by the copyright holder.
-
-======================================================================
-16. CONTRIBUTIONS
-======================================================================
-
-Leviathan Launcher does not currently accept external contributions
-unless explicitly authorized.
-
-If contributions are accepted in the future, separate contribution
-terms may apply.
-
-Submitting code, artwork, documentation, patches, or other materials
-does not automatically guarantee inclusion in the project.
-
-The copyright holder may require contributors to agree to additional
-contribution or licensing terms before accepting contributions.
-
-======================================================================
-17. SECURITY RESEARCH
-======================================================================
-
-Good-faith security research should be reported privately to the
-developer before public disclosure where reasonably possible.
-
-This License does not authorize destructive testing, unauthorized
-access, credential theft, data extraction, service disruption, malware
-deployment, denial-of-service attacks, or access to systems or accounts
-without permission.
-
-Nothing in this section restricts rights that applicable law expressly
-protects.
-
-======================================================================
-18. TERMINATION
-======================================================================
-
-Any rights granted under this License automatically terminate if you
-materially violate its terms.
-
-Upon termination, you must stop exercising rights granted by this
-License and, where legally required and reasonably possible, delete
-unauthorized copies in your possession or control.
-
-Termination does not affect rights or remedies that accrued before
-termination.
-
-The copyright holder may separately grant or restore permission in
-writing.
-
-======================================================================
-19. SOFTWARE PROVIDED "AS IS"
-======================================================================
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LEVIATHAN LAUNCHER
-IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND,
-EXPRESS OR IMPLIED.
-
-THE COPYRIGHT HOLDER MAKES NO WARRANTY THAT THE SOFTWARE WILL BE:
-
-ERROR-FREE,
-
-UNINTERRUPTED,
-
-SECURE,
-
-COMPATIBLE WITH EVERY SYSTEM,
-
-AVAILABLE PERMANENTLY,
-
-OR FREE FROM DEFECTS.
-
-NO WARRANTY IS MADE REGARDING MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE, NON-INFRINGEMENT, OR RELIABILITY EXCEPT WHERE SUCH WARRANTIES
-CANNOT LAWFULLY BE EXCLUDED.
-
-======================================================================
-20. LIMITATION OF LIABILITY
-======================================================================
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER
-SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
-EXEMPLARY, OR PUNITIVE DAMAGES ARISING FROM THE USE OR INABILITY TO USE
-LEVIATHAN LAUNCHER.
-
-THIS MAY INCLUDE LOSS OF DATA, LOSS OF PROFITS, LOSS OF ACCESS,
-INTERRUPTION OF SERVICE, ACCOUNT ISSUES, SYSTEM DAMAGE, OR OTHER
-RELATED LOSSES.
-
-NOTHING IN THIS LICENSE EXCLUDES OR LIMITS LIABILITY WHERE SUCH
-EXCLUSION OR LIMITATION IS PROHIBITED BY APPLICABLE LAW.
-
-======================================================================
-21. CHANGES TO THIRD-PARTY SERVICES
-======================================================================
-
-Leviathan Launcher depends on third-party services and APIs that may
-change, become unavailable, impose new requirements, revoke access, or
-discontinue functionality.
-
-The developer does not control Microsoft, Mojang, Xbox, Minecraft
-Services, or other third-party services.
-
-Compatibility with those services is therefore not guaranteed.
-
-======================================================================
-22. PROJECT AVAILABILITY
-======================================================================
-
-The developer may modify, discontinue, suspend, replace, or stop
-developing Leviathan Launcher at any time.
-
-No guarantee is made that future releases, updates, servers,
-authentication functionality, APIs, downloads, or support will remain
-available.
-
-======================================================================
-23. PRIVACY
-======================================================================
-
-This License does not itself constitute a complete privacy policy.
-
-If Leviathan Launcher becomes publicly available and processes personal
-information, a separate privacy policy may describe applicable data
-collection, storage, processing, retention, and deletion practices.
-
-Third-party services used by Leviathan Launcher may also operate under
-their own privacy policies.
-
-======================================================================
-24. GOVERNING LAW AND MANDATORY RIGHTS
-======================================================================
-
-This License shall be interpreted subject to applicable law.
-
-Nothing in this License is intended to eliminate consumer rights,
-statutory rights, interoperability rights, reverse-engineering
-exceptions, security-research protections, or other rights that cannot
-lawfully be waived or restricted.
-
-If any provision of this License is found unenforceable, the remaining
-provisions shall remain effective to the extent permitted by law.
-
-======================================================================
-25. SEVERABILITY
-======================================================================
-
-If any provision or portion of this License is held invalid, illegal,
-or unenforceable, that provision shall be interpreted or limited to the
-minimum extent necessary, and the remaining provisions shall continue
-in effect.
-
-======================================================================
-26. NO WAIVER
-======================================================================
-
-Failure by the copyright holder to enforce a provision of this License
-does not permanently waive the right to enforce that provision or any
-other provision later.
-
-======================================================================
-27. WRITTEN PERMISSION
-======================================================================
-
-The copyright holder may grant additional permissions on a
-case-by-case basis.
-
-Such permission must be provided directly by the copyright holder and
-should clearly identify the rights being granted.
-
-Permission granted to one person, organization, or project does not
-automatically extend to others.
-
-======================================================================
-28. COMMERCIAL LICENSING
-======================================================================
-
-No commercial license is granted under this License.
-
-Any company, individual, organization, or project wishing to use
-Leviathan Launcher source code, technology, branding, assets, or other
-protected materials commercially must obtain separate written
-permission from the copyright holder.
-
-======================================================================
-29. ENTIRE LICENSE
-======================================================================
-
-This License represents the default licensing terms for original
-Leviathan Launcher materials unless another file, source-code header,
-asset notice, third-party license, or written agreement explicitly
-states otherwise.
-
-More specific licensing terms applicable to a particular component may
-take precedence for that component.
-
-======================================================================
-30. CONTACT AND PERMISSIONS
-======================================================================
-
-Project:
-
-Leviathan Launcher
-
-Developer:
-
-Danni
-
-GitHub:
-
-https://github.com/Lapinite
-
-Official Repository:
-
-https://github.com/Lapinite/Leviathan-Launcher
-
-Requests for redistribution, modification, commercial licensing,
-branding usage, integration, or other permissions should be directed
-to the project developer.
-
-======================================================================
-
-Copyright © 2026 Danni.
-All Rights Reserved.
-
-Leviathan Launcher is proprietary software.
-No open-source license is granted unless explicitly stated otherwise.
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.

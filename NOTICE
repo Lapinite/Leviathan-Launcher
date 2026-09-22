@@ -1,22 +1,19 @@
 LEVIATHAN LAUNCHER NOTICE
 
-Copyright © 2026 Danni.
-All Rights Reserved.
+Copyright © 2026 Leviathan project owner.
+All rights reserved except where a third-party license states otherwise.
 
-Leviathan Launcher is proprietary software.
+Leviathan Launcher is an independently developed third-party project for Minecraft: Java Edition. It is not an official Minecraft, Mojang, Microsoft, or Xbox product.
 
-Leviathan Launcher is an independent third-party Minecraft: Java Edition launcher project and is not affiliated with, sponsored by, endorsed by, operated by, or officially associated with Microsoft Corporation, Mojang Studios, Xbox, or Minecraft unless explicitly stated otherwise by the relevant rights holder.
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
 
-Minecraft, Microsoft, Xbox, Mojang, and related trademarks, services, APIs, game assets, and intellectual property remain the property of their respective owners.
+The project may interoperate with services operated by Microsoft, Xbox, Mojang Studios, Minecraft Services, GitHub, and other providers. Those names, marks, services, APIs, and content remain the property of their respective owners and are governed by their own terms.
 
-Third-party software and services used by or referenced by Leviathan Launcher remain subject to their own licenses and terms.
+Public repository visibility does not make Leviathan open-source. See LICENSE for the license that applies to Leviathan's original project materials.
 
-See:
-- LICENSE
-- THIRD_PARTY_NOTICES.md
-- PRIVACY.md
-- SECURITY.md
-- TERMS.md
+Third-party components must retain the notices and license terms required by their respective licenses. See THIRD_PARTY_NOTICES.md.
 
-Official repository:
+This public notice intentionally contains no tenant IDs, object IDs, secrets, tokens, private keys, signing keys, recovery material, payment credentials, or infrastructure credentials.
+
+Current public project reference:
 https://github.com/Lapinite/Leviathan-Launcher

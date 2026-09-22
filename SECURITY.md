@@ -1,289 +1,139 @@
-# Leviathan Launcher Security Policy
+# Leviathan Launcher — Security Policy
 
-**Project status:** Private Development
+**Status:** Private development  
+**Last updated:** 8 September 2026
 
-Leviathan Launcher takes security issues seriously.
+Security reports are welcome. Do not publish secrets, active credentials, exploit details that endanger users, or personal data in a public issue.
 
-This document explains how to report potential security vulnerabilities involving Leviathan Launcher and what kinds of testing are considered appropriate.
+## Reporting a vulnerability
 
-> **Current access:** Leviathan Launcher is currently privately developed and is not publicly distributed.
+Use GitHub's private vulnerability-reporting or security-advisory workflow for this repository when it is available. If private reporting is not available, do not post exploit details publicly; use the support guidance in `SUPPORT.md` to establish a safe contact path first.
 
----
+For non-security bugs, use the repository's normal issue tracker.
 
-## Supported Versions
+Repository:
 
-Leviathan Launcher has not yet reached a public stable release.
+https://github.com/Lapinite/Leviathan-Launcher
 
-| Version | Supported |
-| --- | --- |
-| Private development builds | Developer testing only |
-| Public releases | Not yet available |
+## What to include
 
-This table will be updated when public releases begin.
+A useful report may include:
 
----
+- affected version or commit;
+- affected operating system;
+- clear reproduction steps;
+- expected and actual behavior;
+- security impact;
+- sanitized logs or screenshots;
+- whether exploitation requires authentication or user interaction.
 
-## Reporting a Security Vulnerability
+Remove secrets and personal data before submitting anything.
 
-If you believe you have discovered a security issue involving Leviathan Launcher, please avoid publishing sensitive details publicly before the developer has had a reasonable opportunity to investigate.
+## Never include
 
-For now, contact the developer through:
+Do not send or publish:
 
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
+- passwords;
+- access or refresh tokens;
+- session cookies;
+- authorization codes;
+- client secrets;
+- private keys;
+- signing keys;
+- recovery phrases;
+- recovery codes;
+- payment credentials;
+- database credentials;
+- infrastructure credentials.
 
-A dedicated security contact or private vulnerability-reporting channel may be added before public release.
+## Public-client authentication model
 
-When reporting an issue, include as much useful information as possible, such as:
+Leviathan Launcher is a public desktop client. It uses a system-browser authentication design with a localhost loopback callback and public-client flows.
 
-- A clear description of the vulnerability
-- The affected launcher component
-- Steps required to reproduce it
-- The expected behavior
-- The actual behavior
-- Relevant error messages
-- Screenshots, where appropriate
-- Operating system and Java version
-- Launcher version or commit
-- Potential security impact
-- Suggested mitigation, if known
+The distributed launcher must not contain a confidential client secret. A public application identifier is not a password or secret, but administrative identifiers that are not needed in public documentation should still be omitted.
 
-Do **not** include passwords, private keys, access tokens, refresh tokens, session cookies, recovery codes, or other credentials in a public GitHub issue.
+The current launcher authentication design does not require configured Microsoft Graph permissions for its Minecraft sign-in flow.
 
----
+## Authentication requirements
 
-## Sensitive Reports
+The launcher must not intentionally implement:
 
-Potential vulnerabilities involving any of the following should be treated as sensitive:
+- credential harvesting;
+- cracked authentication;
+- offline impersonation represented as legitimate Microsoft authentication;
+- Minecraft ownership bypasses;
+- entitlement bypasses;
+- license circumvention;
+- token theft;
+- hidden production authentication bypasses.
 
-- Microsoft authentication
-- Xbox Live authentication
-- XSTS authentication
-- Minecraft Services authentication
-- Access tokens
-- Refresh tokens
-- Session information
-- Account impersonation
-- Ownership verification
-- Launcher update mechanisms
-- Remote code execution
-- Arbitrary file writes
-- Path traversal
-- Command injection
-- Code-signing systems
-- Download verification
-- Launcher infrastructure
-- Private APIs
-- Private keys
-- Developer credentials
-- Authentication configuration
-- User data exposure
+Authentication should use modern public-client protections, including PKCE and state validation where applicable.
 
-Please avoid publicly disclosing exploit details for these issues before a fix can be investigated.
+## Token handling
 
----
+Authentication tokens are confidential.
 
-## Authentication Security
+The launcher should:
 
-Leviathan Launcher is designed to use official Microsoft authentication infrastructure.
+- keep tokens out of source control;
+- redact tokens from logs and crash reports;
+- avoid displaying raw tokens in the UI;
+- restrict token use to the intended service and purpose;
+- clear local authentication state on sign-out where practical;
+- prefer secure operating-system credential storage;
+- avoid durable weak-obfuscation storage for refresh credentials.
 
-The project is intended to follow these principles:
+If secure persistent storage is unavailable, re-authentication is preferable to treating simple obfuscation as secure storage.
 
-- Microsoft passwords are not entered directly into Leviathan Launcher
-- No confidential Microsoft client secret is embedded in the desktop application
-- Authentication occurs through Microsoft
-- Xbox Live and XSTS authentication are used where required
-- Minecraft Services is used for legitimate ownership and profile verification
-- Authentication tokens are treated as sensitive
-- Authentication bypasses are not intentionally supported
+## Minecraft linking verification
 
-The Microsoft Entra Application ID used by Leviathan Launcher is an identifier, not a secret.
+Where Leviathan verifies a Minecraft profile through a verification server, the approved baseline is:
 
-Private keys, client secrets, account tokens, and other confidential credentials must never be committed to the repository.
+- a verification code remains the same while it is valid;
+- codes expire after 10 minutes;
+- rejoining while the code is still valid returns the same code;
+- five failed attempts trigger a one-hour restriction;
+- ten failed attempts trigger a stronger verification-server restriction or ban;
+- successful verification resets the failed-attempt count;
+- authorized staff may reset attempts or remove the verification restriction only after appropriate account-holder confirmation;
+- sensitive staff actions must be permission-controlled and audited.
 
----
+No additional escalation schedule should be treated as approved unless separately adopted.
 
-## Credential Handling
+## Leviathan Account recovery
 
-Do not commit or publish:
+Where platform accounts are available, security controls may include 2FA, recovery codes, a recovery phrase, session/device revocation, and staff-assisted recovery under controlled conditions.
 
-- Microsoft access tokens
-- Microsoft refresh tokens
-- Xbox Live tokens
-- XSTS tokens
-- Minecraft access tokens
-- Session cookies
-- Client secrets
-- Private keys
-- Signing keys
-- API secrets
-- Recovery codes
-- Personal authentication files
-- Developer credentials
+A recovery phrase alone must not automatically authorize a high-risk takeover. Staff should not ask users to send a recovery phrase through ordinary support channels.
 
-The repository's `.gitignore` should exclude local token, session, environment, cache, and credential files where applicable.
+After staff-assisted 2FA removal, high-risk features should remain locked until 2FA is configured again. Stolen-account recovery should revoke existing sessions and device trust. Restored deleted accounts should require fresh session/device approval.
 
-If a credential is accidentally committed, removing it from the latest commit is **not sufficient**.
+## High-risk actions
 
-The affected credential should be considered compromised and revoked or rotated as soon as possible.
+Purchases, gifting, transfers, trading, marketplace activity, sensitive account changes, and similar high-risk operations may require re-authentication, trusted-device/location approval, limits, temporary holds, or manual review.
 
----
+## Server-side authority
 
-## Dependency Security
+Clients are untrusted. Sensitive state changes should be validated server-side. Economy and ownership mutations should be idempotent and auditable, with authoritative server-side records.
 
-Leviathan Launcher may rely on third-party libraries and tools.
+## Release security
 
-Dependencies should be obtained from trusted sources and updated when necessary to address known security issues.
+Before a public release, Leviathan should have appropriate controls for:
 
-Before public release, the project may introduce additional dependency-scanning or software-composition-analysis tooling.
+- signed or integrity-verified updates;
+- protected release workflows;
+- secret scanning and push protection;
+- protected primary branches;
+- dependency review;
+- rollback planning;
+- secure build provenance where practical.
 
----
+## Scope and authorization
 
-## Download and Update Security
+A security policy is not authorization to attack third-party systems. Research must remain within systems the reporter owns or has explicit authorization to test.
 
-Future public releases should take reasonable measures to protect launcher downloads and update mechanisms from tampering.
+Microsoft, Xbox, Minecraft Services, Mojang, GitHub, payment providers, and other external services are outside Leviathan's authorization scope unless those providers separately authorize testing.
 
-Possible protections may include:
+## Minecraft disclaimer
 
-- HTTPS-only downloads
-- Trusted release hosting
-- File hashes
-- Digital signatures
-- Code signing
-- Verified update metadata
-- Restricted release credentials
-
-These mechanisms may evolve as the project approaches public distribution.
-
----
-
-## Good-Faith Security Research
-
-Good-faith security research is welcome when it is conducted responsibly.
-
-Researchers should:
-
-- Avoid accessing accounts or data that do not belong to them
-- Avoid damaging systems or data
-- Avoid service disruption
-- Avoid denial-of-service testing
-- Avoid credential theft
-- Avoid persistence on systems
-- Avoid malware deployment
-- Stop testing if sensitive user data is exposed
-- Report vulnerabilities privately where reasonably possible
-- Allow reasonable time for investigation and remediation before public disclosure
-
-Nothing in this policy grants permission to access third-party systems, Microsoft services, Mojang services, Minecraft Services, GitHub, or any infrastructure without authorization.
-
-Testing of third-party services remains subject to those providers' own policies and authorization requirements.
-
----
-
-## Out of Scope
-
-Unless explicitly authorized, the following are out of scope:
-
-- Social engineering
-- Phishing
-- Credential stuffing
-- Password spraying
-- Denial-of-service attacks
-- Physical attacks
-- Testing against accounts you do not own
-- Testing against Microsoft, Xbox, Mojang, Minecraft Services, GitHub, or other third-party infrastructure without authorization
-- Malware deployment
-- Destructive testing
-- Data exfiltration beyond what is necessary to demonstrate an issue
-- Publishing private credentials or authentication tokens
-
----
-
-## Public Issues vs. Security Reports
-
-Normal bugs can be reported through the GitHub repository when public issue tracking is available.
-
-Examples of normal bugs include:
-
-- UI layout problems
-- Non-sensitive crashes
-- Version-selection issues
-- Display problems
-- Cosmetic glitches
-- Non-security download errors
-
-Security-sensitive issues should not include exploitable details in public issue threads.
-
----
-
-## Disclosure Process
-
-For a valid security report, the developer may:
-
-1. Acknowledge the report
-2. Reproduce and investigate the issue
-3. Determine severity and affected versions
-4. Develop a fix or mitigation
-5. Test the fix
-6. Release or deploy the fix where appropriate
-7. Coordinate disclosure where reasonable
-
-Because Leviathan Launcher is currently privately developed, response times are not guaranteed.
-
----
-
-## Security Updates
-
-Before public release, Leviathan Launcher may introduce a formal security-update policy.
-
-Critical vulnerabilities may require:
-
-- Mandatory launcher updates
-- Token revocation
-- Credential rotation
-- Disabled versions
-- Backend configuration changes
-- Emergency releases
-
----
-
-## Third-Party Vulnerabilities
-
-Security vulnerabilities affecting Microsoft, Xbox, Mojang Studios, Minecraft Services, Java, GitHub, or other third-party software should generally be reported to the relevant third-party provider.
-
-Leviathan Launcher does not control those services.
-
-If a third-party vulnerability specifically creates a security issue in Leviathan Launcher, it may still be appropriate to notify the Leviathan developer as well.
-
----
-
-## No Guarantee of Security
-
-Reasonable efforts may be made to improve security, but no software can be guaranteed to be completely secure or free of vulnerabilities.
-
-Leviathan Launcher is currently under active development and may change significantly before public release.
-
----
-
-## Contact
-
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
-**Repository:** https://github.com/Lapinite/Leviathan-Launcher
-
-A dedicated security email or GitHub private vulnerability-reporting mechanism may be added later.
-
----
-
-## Independent Project Notice
-
-Leviathan Launcher is an independent third-party project.
-
-It is not affiliated with, sponsored by, endorsed by, operated by, or officially associated with Microsoft Corporation, Mojang Studios, Xbox, or Minecraft unless explicitly stated otherwise.
-
----
-
-**Leviathan Launcher**  
-Security Policy  
-Copyright © 2026 Danni. All Rights Reserved.
+**NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.**
