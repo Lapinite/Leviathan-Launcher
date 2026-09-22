@@ -1,7 +1,6 @@
 # Leviathan Launcher Code Owners
 #
-# Danni / Lapinite is currently the sole developer and maintainer.
-# These rules automatically request review from @Lapinite when
+# These rules automatically request review from the repository maintainer account when
 # pull requests modify matching files.
 
 * @Lapinite

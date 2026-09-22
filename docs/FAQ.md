@@ -34,7 +34,7 @@ No.
 
 Leviathan Launcher is **not currently available for public download or general use**.
 
-Development builds are currently accessible only to the developer, **Danni**.
+Development builds are currently restricted to authorized maintainers of the **Leviathan project portfolio**.
 
 There are no official public beta builds or public release packages at this time.
 
@@ -146,7 +146,7 @@ The Microsoft Application (Client) ID is an identifier and is not a secret.
 
 Third-party launcher applications may require approval before Minecraft Services accepts their Microsoft application registration for the required authentication APIs.
 
-Leviathan Launcher's AppID has been submitted to Mojang Studios for review.
+Leviathan Launcher's AppID review submission is currently pending.
 
 Current status:
 
@@ -156,7 +156,7 @@ Current status:
 - [x] Xbox Live authentication integrated
 - [x] XSTS authentication integrated
 - [x] Minecraft Services integration implemented
-- [x] AppID approval request submitted to Mojang Studios
+- [ ] Submit AppID review request
 - [ ] AppID approval received
 
 ---
@@ -181,13 +181,7 @@ It is not affiliated with, sponsored by, endorsed by, operated by, or officially
 
 ## Who develops Leviathan Launcher?
 
-Leviathan Launcher is currently developed and maintained by:
-
-**Danni**
-
-GitHub:
-
-https://github.com/Lapinite
+Leviathan Launcher is currently developed and maintained as part of the **Leviathan project portfolio**.
 
 ---
 
@@ -363,8 +357,7 @@ https://github.com/Lapinite/Leviathan-Launcher
 
 ## Contact
 
-**Developer:** Danni  
-**GitHub:** https://github.com/Lapinite  
+**Project:** Leviathan project portfolio  
 **Repository:** https://github.com/Lapinite/Leviathan-Launcher
 
 Additional contact and support methods may be added before public release.
@@ -373,4 +366,4 @@ Additional contact and support methods may be added before public release.
 
 **Leviathan Launcher**  
 Private Development  
-Copyright © 2026 Danni. All Rights Reserved.
+Copyright © 2026 Leviathan project owner. All Rights Reserved.
