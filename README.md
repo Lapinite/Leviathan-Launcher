@@ -37,50 +37,17 @@ Leviathan Launcher is an independent Minecraft: Java Edition launcher designed a
 
 The launcher is intended to complement the legitimate Minecraft experience. It does not bypass authentication, game ownership, licensing, entitlement checks, or Microsoft/Mojang security systems.
 
-## Platform areas
+## Platform architecture
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-<strong>Accounts & Authentication</strong><br>
-<sub>Microsoft OAuth · Xbox Live · XSTS · Minecraft Services · ownership verification · Minecraft profile retrieval</sub>
-</td>
-<td width="50%" valign="top">
-<strong>Profiles & Instances</strong><br>
-<sub>Launcher profiles · Minecraft versions · instance configuration · launch settings · Java/runtime selection</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<strong>Experience & Customization</strong><br>
-<sub>Themes · launcher settings · cosmetics · news · quality-of-life features · performance configuration</sub>
-</td>
-<td width="50%" valign="top">
-<strong>Platform & Delivery</strong><br>
-<sub>Downloads · updates · installer flow · Cast · connected services · diagnostics · release validation</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <img width="100%" src="assets/platform-flow.svg" alt="Animated Leviathan Launcher platform and authentication flow">
+</p>
+
+The public architecture shows the major trust boundaries and product areas without exposing proprietary source code, private endpoints, credentials, internal service names, database schemas, or sensitive implementation details.
 
 ## Authentication model
 
-Leviathan Launcher uses Microsoft's authentication infrastructure. The intended flow is:
-
-```text
-Microsoft OAuth
-      ↓
-Xbox Live
-      ↓
-XSTS
-      ↓
-Minecraft Services
-      ↓
-Ownership / entitlement verification
-      ↓
-Minecraft profile
-      ↓
-Legitimate game launch
-```
+Leviathan Launcher uses Microsoft's official authentication infrastructure. Microsoft OAuth, Xbox Live, XSTS and Minecraft Services remain external service boundaries, while Leviathan maps verified Minecraft identity and ownership state into its own launcher/platform session model.
 
 The launcher does **not** request or store Microsoft account passwords. It is configured as a public desktop client and does not distribute a confidential Microsoft client secret inside the application.
 
@@ -109,9 +76,11 @@ Public documentation and repositories must not contain production credentials, a
 
 Users should never provide a Microsoft password directly to Leviathan Launcher or to anyone claiming to represent the project.
 
-## Privacy
+## Privacy and data boundaries
 
-Leviathan aims to process only information needed for legitimate launcher functionality, including authentication, ownership verification, Minecraft profile retrieval, launch operations, diagnostics, and supported connected services.
+Leviathan aims to process only information needed for legitimate launcher functionality, including authentication, ownership verification, Minecraft profile retrieval, launch operations, diagnostics, Cast/device state, and supported connected services.
+
+Microsoft, Xbox, Mojang and Minecraft services remain responsible for their own account systems and credentials. Leviathan should retain only the identity mapping, entitlement/product state, session state, device state, diagnostics, telemetry and other platform data required for its own functionality.
 
 A dedicated public privacy policy may be published before public testing or distribution.
 
@@ -131,6 +100,7 @@ A dedicated public privacy policy may be published before public testing or dist
 | Version and instance management | In progress |
 | Launcher customization and cosmetics | In development |
 | Automatic launcher updates | In development |
+| Cast sender / TV receiver validation | In progress |
 | Internal compatibility and regression testing | In progress |
 | Public beta | Not started |
 | Stable public release | Not started |
@@ -139,7 +109,7 @@ The roadmap changes as testing and architecture evolve. A checked or active deve
 
 ## Current validation focus
 
-Current internal validation includes launcher behavior, authentication integration, compatibility, install/update flows, error recovery, security checks, and connected platform work. Release-facing artifacts remain private until the project is ready for public distribution.
+Current internal validation includes launcher behavior, authentication integration, compatibility, install/update flows, error recovery, Cast/device behavior, security checks, and connected platform work. Release-facing artifacts remain private until the project is ready for public distribution.
 
 ## Repository purpose
 
