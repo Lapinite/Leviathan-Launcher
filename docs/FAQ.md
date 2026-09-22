@@ -156,7 +156,7 @@ Current status:
 - [x] Xbox Live authentication integrated
 - [x] XSTS authentication integrated
 - [x] Minecraft Services integration implemented
-- [ ] Submit AppID review request
+- [x] Submit AppID review request
 - [ ] AppID approval received
 
 ---
